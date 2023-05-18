@@ -1,0 +1,281 @@
+@charset "UTF-8";
+
+/*Betűstílus*/
+* {
+    font-family: 'Patua One', cursive;
+}
+
+
+/*A sectionok formázása, háttérképek beállítása*/
+section {
+    padding: 90px 10px;  
+}
+
+.Ferrari {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/ferrari.jpg");
+    background-size: cover;
+    color: #cc0000;
+    background-attachment: fixed;
+}
+
+.Haas {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/haas.jpg");
+    background-size: cover;
+    color: #997a00;
+    background-attachment: fixed;
+}
+
+.Mclaren {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/mclaren.jpg");
+    background-size: cover;
+    color: #FF8C00;
+    background-attachment: fixed;
+}
+
+.Mercedes {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/mercedes.jpg");
+    background-size: cover;
+    color: Cyan;
+    background-attachment: fixed;
+}
+
+.Racing {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/racing.jpg");
+    background-size: cover;
+    color: #FF69B4;
+    background-attachment: fixed;
+}
+
+.RedBull {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/red-bull.jpg");
+    background-size: cover;
+    color: red;
+    background-attachment: fixed;
+}
+
+.Renault {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/renault.jpg");
+    background-size: cover;
+    color: #DAA520;
+    background-attachment: fixed;
+}
+
+.Sauber {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/sauber.jpg");
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+
+.ToroRosso {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/toro_rosso.jpg");
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+
+.Williams {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/williams.jpg");
+    background-size: cover;
+    color: DeepSkyBlue;
+    background-attachment: fixed;
+}
+
+
+/*Címsorok formázása*/
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    padding: 5px;
+    font-size: 35px;
+    font-family: 'Berkshire Swash', cursive;
+    font-weight: bold;
+    
+}
+
+h3 {
+    text-align: center;
+}
+
+
+/*Kijelölés színének, hátterének megadása*/
+::selection {
+  color: red;
+  background: black;
+}
+
+
+/*Az elválasztó vonal formázása*/
+body hr {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    border-top: 4px solid brown;
+}
+
+
+/*Forgó cardok*/
+.flip-card {
+    max-width: 100%;
+    max-height: 100%;
+    width: 500px;
+    height: 350px;
+    perspective: 1000px;
+}
+  
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+.flip-card-front, .flip-card-back {
+    border-radius: 20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+  
+.flip-card-back {
+    font-weight: bold;
+    font-size: 20px;
+    transform: rotateY(180deg);
+    z-index: 1;
+    text-align: left;
+}
+
+.flip-card-back p {
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+
+#ferrari1, #ferrari2 {
+    background-color: #cc0000;
+    color: black;
+}
+
+#haas1, #haas2 {
+    background-color: #997a00;
+    color: black;
+}
+
+#mclaren1, #mclaren2 {
+    background-color: #FF8C00;
+    color: #000080;
+}
+
+#mercedes1, #mercedes2 {
+    background-color: #808080;
+    color: Cyan;
+}
+
+#racing1, #racing2 {
+    background-color: #FF69B4;
+    color: blue;
+}
+
+#bull1, #bull2 {
+    background-color: black;
+    color: red;
+}
+
+#renault1, #renault2 {
+    background-color: #DAA520;
+    color: black;
+}
+
+#sauber1, #sauber2 {
+    background-color: #8B0000;
+    color: white;
+}
+
+#tororosso1, #tororosso2 {
+    background-color: #00008B;
+    color: white;
+}
+
+#williams1, #williams2 {
+    background-color: DeepSkyBlue;
+    color: white;
+}
+
+
+/*Képek formázása*/
+img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 500px; 
+    height: 350px;
+    border-radius: 20px;
+}
+
+
+/*Menü beállítás*/
+a.nav-link {
+    color: white;
+    font-size: 20px;
+}
+
+a.nav-link:hover {
+    color: red;
+}
+
+#nav {
+    background-color: black;
+}
+
+
+/*Oldal tetejére gomb*/
+#button {
+    display: inline-block;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: background-color .3s, 
+        opacity .5s, visibility .5s;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: orangered;
+}
+
+#button:active {
+    background-color: #555;
+}
+
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: black;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}

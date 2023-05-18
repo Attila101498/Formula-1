@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+/* A sectionok formázása, háttérképek beállítása */
+.story {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/story_bg.jpg");
+    background-size: cover;
+    color: black;
+    background-attachment: fixed;
+}
+
+.otvenes {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/50.jpg");
+    background-size: cover;
+    color: black;
+    background-attachment: fixed;
+}
+
+.hetvenes {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/70.png");
+    background-size: cover;
+    color: black;
+    background-attachment: fixed;
+}
+
+.nyolcvanas {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/80.jpg");
+    background-size: cover;
+    color: black;
+    background-attachment: fixed;
+}
+
+.ketezres {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/20.jpg");
+    background-size: cover;
+    color: black;
+    background-attachment: fixed;
+}
+
+
+/* Kijelölés színének, hátterének megadása */
+::selection {
+    color: red;
+    background: black;
+}
+
+
+/* Címsorok formázása */
+h2 {
+    font-weight: bold;
+    color: red;
+    text-align: left;
+    font-size: 25px;
+    font-family: 'Suez One', serif;
+}
+
+
+#info {
+    color: firebrick;
+    font-size: 16px;
+}
+
+
+/* Hiperhivatkozások formázása */
+a:link {
+    color: steelblue; /* Unvisited link */
+}
+
+a:visited {
+    color: firebrick; /* Visited link */
+}
+
+
+/* Oldal formázása */
+#feher {
+    padding-top: 15px;
+}
+
+#feher, #feher1, #feher2, #feher3, #feher4 {
+    font-size: 16px;
+    background-color: white;
+    font-family: 'Crete Round', serif;
+    text-align: justify;
+}
+
+.row {
+    padding-bottom: 20px;
+    padding-top: 10px
+}
+
+
+/* Menübeállítás */
+#nav {
+    background: rgba(0, 0, 0, 1);
+}
+
+a.nav-link {
+    color: white;
+    font-size: 20px;
+}
+
+a.nav-link:hover {
+    color: red;
+}
+
+
+/* A képek és szövegük formázása */
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+}
+
+
+/* Oldal tetejére gomb */
+#button {
+    display: inline-block;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: background-color .3s, 
+        opacity .5s, visibility .5s;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: orangered;
+}
+
+#button:active {
+    background-color: #555;
+}
+
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: black;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}

@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Vollkorn', serif;
+    font-size: 17px;
+}
+
+
+/*Hiperhivatkozások formázása*/
+a:link {
+    color: steelblue; /*Unvisited link*/
+}
+
+a:visited {
+    color: firebrick; /*Visited link*/
+}
+
+
+/*Kijelölés színének, hátterének megadása*/
+::selection {
+    color: red;
+    background: black;
+}
+
+
+/*Menübeállítás*/
+#nav {
+    background: rgba(0, 0, 0, 1);
+}
+
+a.nav-link {
+    color: white;
+    font-size: 20px;
+}
+
+a.nav-link:hover {
+    color: red;
+}
+
+
+/*Cella beállítás*/
+.minwidth {
+    width: 150px;
+    height: 85px;
+}
+
+
+/*Képbeállítások*/
+#kep1, #kep2, #kep3, #kep4, #kep5, #kep6, #kep7, #kep8, #kep9, #kep10 {
+    position: relative;
+}
+
+@media screen and (max-width: 1000px) {
+    #kep1, #kep2, #kep3, #kep4, #kep5, #kep6, #kep7, #kep8, #kep9, #kep10 {
+        display: none;
+    }
+}
+
+
+/*Címsorok*/
+h1 {
+    color: black;
+    border-bottom: 5px solid red;
+    font-size: 30px;
+}
+
+h3 {
+    color: #B22222;
+    font-size: 25px;
+}
+
+
+/*Táblázatok beállítása*/
+tr:nth-child(2n+1) {
+    background-color: CornflowerBlue;   
+}
+
+tr:nth-child(2n) {
+    background-color: white;  
+}
+
+td, th {
+    border: 1px solid black;
+}
+
+#pontVerseny tr{
+    background-color: white;
+    font-size: 20px;
+}
+
+#kiir {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+/*Háttér beállítás*/
+#feher, #feher2 {
+    background-color: white;
+}
+
+.hatter {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("konhatter.jpg");
+    background-size: cover;
+    color: black;
+    background-attachment: fixed;
+}
+
+.row {
+    padding-bottom: 20px;
+}
+
+
+/*Oldal tetejére gomb*/
+#button {
+    display: inline-block;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: background-color .3s, 
+        opacity .5s, visibility .5s;
+    font-size: 15px;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: orangered;
+}
+
+#button:active {
+    background-color: #555;
+}
+
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: black;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*Animáció*/
+.scale-in-hor-center {
+    -webkit-animation: scale-in-hor-center 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;	        
+}
+
+@-webkit-keyframes scale-in-hor-center {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: 1;
+  }
+}

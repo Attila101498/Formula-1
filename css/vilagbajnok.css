@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Lora', serif;
+}
+
+
+/*A képek és szövegük formázása*/
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    -webkit-animation: rotate-in-2-fwd 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+div.gallery:hover {
+    border: 1px solid #666666;
+    opacity: 0.5;
+}
+
+div.gallery img {
+    width: 350px;
+    height: 200px; 
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+
+/*Kijelölés színének, hátterének megadása*/
+::selection {
+    color: red;
+    background: black;
+}
+
+
+/*Menü beállítás*/
+a.nav-link {
+    color: white;
+    font-size: 20px;
+}
+
+a.nav-link:hover {
+    color: red;
+}
+
+#nav {
+    background-color: black;
+}
+
+#feher {
+    background-color: whitesmoke;
+}
+
+
+/*Oldal tetejére gomb*/
+#button {
+    display: inline-block;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: background-color .3s, 
+        opacity .5s, visibility .5s;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: orangered;
+}
+
+#button:active {
+    background-color: #555;
+}
+
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: black;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*Animáció*/
+@-webkit-keyframes rotate-in-2-fwd {
+  0% {
+    -webkit-transform: translateZ(-200px) rotate(-45deg);
+            transform: translateZ(-200px) rotate(-45deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0) rotate(0);
+            transform: translateZ(0) rotate(0);
+    opacity: 1;
+  }
+}

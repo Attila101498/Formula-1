@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+<head>
+    <title>Formula-1&reg;</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/f1_logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Maitree&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+    <!-- Logo -->
+    <div class="header">
+        <img src="img/f1_logo.jpg" alt="f1_logo">
+    </div>
+
+    <!-- Menubar -->
+    <div class="topnav" id="myTopnav">
+        <a href="#index.html" class="active" data-toggle="tooltip" data-placement="bottom" title="Kezdőlap"><span>
+                <img src="img/home_icon.png" alt="home_icon" style="height: 20px; width: 20px;"></span>&nbsp;
+            Kezdőlap</a>
+
+        <a href="tortenete.html" data-toggle="tooltip" data-placement="bottom" title="A Formula-1 története"><span>
+                <img src="img/tortenet_ikon_feher.png" alt="tortenet_ikon_feher"
+                    style="height: 20px; width: 20px;"></span>&nbsp; Története</a>
+
+        <a href="pilotak.html" data-toggle="tooltip" data-placement="bottom" title="A 2019-es szezon pilótái"><span>
+                <img src="img/pilota_ikon_feher.png" alt="pilota_ikon_feher"
+                    style="height: 20px; width: 20px;"></span>&nbsp; Pilóták</a>
+
+        <a href="konstruktor.html" data-toggle="tooltip" data-placement="bottom" title="Konstruktőrök"><span>
+            <img src="img/konstruktor_ikon_feher.png" alt="konstruktor_ikon_feher"
+                style="height: 20px; width: 20px;"></span>&nbsp; Konstruktőrök</a>
+
+        <a href="vilagbajnok.html" data-toggle="tooltip" data-placement="bottom"
+            title="A Formula-1 világbajnokai"><span>
+                <img src="img/vilagbajnok_ikon_feher.png" alt="vilagbajnok_ikon_feher"
+                    style="height: 20px; width: 20px;"></span>&nbsp; Világbajnokok</a>
+
+        <a href="ferrari.html" data-toggle="tooltip" data-placement="bottom"
+            title="A Formula-1 legmeghatározóbb csapatai"><span>
+                <img src="img/csapat_ikon_feher.png" alt="csapat_ikon_feher"
+                    style="height: 20px; width: 20px;"></span>&nbsp; Csapatok</a>
+
+        <a href="palyak.html" data-toggle="tooltip" data-placement="bottom" title="A 2019-es versenypályák"><span>
+                <img src="img/palya_Ikon_feher.png" alt="palya_Ikon_feher"
+                    style="height: 20px; width: 20px;"></span>&nbsp; Pályák</a>
+
+        <a href="biztonsag.html" data-toggle="tooltip" data-placement="bottom" title="A biztonság fejlődése"><span>
+                <img src="img/biztonsag_ikon_feher.png" alt="biztonsag_ikon_feher"
+                    style="height: 20px; width: 20px;"></span>&nbsp; Biztonság</a>
+
+        <a href="http://formula.hu/f1" data-toggle="tooltip" data-placement="bottom" target="_blank"
+            title="Hírek"><span>
+                <img src="img/hirek_ikon_feher.png" alt="hirek_ikon_feher"
+                    style="height: 20px; width: 20px;"></span>&nbsp; Hírek</a>
+
+        <!-- Legördülő menü -->
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="jobb">
+            <span data-toggle="tooltip" data-placement="bottom" title="Quizek">
+                <img src="img/quiz_ikon_feher.png" alt="quiz_ikon_feher" style="height: 20px; width: 20px;">
+                &nbsp;Quiz
+            </span>
+        </a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="tortenetquiz.html" target="_blank">Története</a>
+            <a class="dropdown-item" href="pilotaquiz.html" target="_blank">Pilóták</a>
+            <a class="dropdown-item" href="konstruktorquiz.html" target="_blank">Konstruktőrök</a>
+            <a class="dropdown-item" href="vilagbajnokquiz.html" target="_blank">Világbajnokok</a>
+            <a class="dropdown-item" href="csapatquiz.html" target="_blank">Csapatok</a>
+            <a class="dropdown-item" href="palyakquiz.html" target="_blank">Pályák</a>
+            <a class="dropdown-item" href="biztonsagquiz.html" target="_blank">Biztonság</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction();">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- Informations -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <h2>
+                    <span>
+                        <img src="img/tortenet_ikon.png" alt="tortenet_ikon" style="height: 30px; width: 30px;">
+                    </span> Története
+                </h2>
+                <hr>
+                <p>Ezen az oldalon a Formula-1 fejlődésének a történetét olvashatja, a kezdetektől 2019-ig.
+                    Évtizedenként megtalálhatóak a legfőbb események, legjelentősebb szabályváltozások, az évtized 
+                    legksikeresebb pilótáival, csapataival és eredményeikkel.</p>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <h2>
+                    <span>
+                        <img src="img/pilota_ikon.png" alt="pilota_ikon" style="height: 30px; width: 30px;">
+                    </span> Pilóták
+                </h2>
+                <hr>
+                <p>A 2019-es idényt az újoncok éveinek is mondhatnánk. Rengeteg újonc érkezett a "veteránok" helyére.
+                    Ezen az oldalon a 2019-es pilótákat találja, csapatonként párosítva. Ha a pilóta képe fölé viszi az
+                    egeret, akkor megtalálhatja a legfontosabb
+                    információkat az adott pilótáról.</p>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <h2>
+                    <span>
+                        <img src="img/konstruktor_ikon.png" alt="konstruktor_ikon" style="height: 30px; width: 30px;">
+                    </span> Konstruktőrök
+                </h2>
+                <hr>
+                <p>A konstruktőrök világbajnokságot 1958-ban írták ki először a Formula-1-ben, de a kezdetektől
+                    meghatározó szerepet töltenek be a sportágban. Az 1958-as bajnokságtól egészen a mai napig
+                    megtalálja az adott év konstruktőri világbajnokát,
+                    valamint a 2019-es szezon csapatait és a jelenlegi konstruktőri állást is megtekintheti az oldalon.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <h2>
+                    <span>
+                        <img src="img/vilagbajnok_ikon.png" alt="vilagbajnok_ikon" style="height: 30px; width: 30px;">
+                    </span> Világbajnokok
+                </h2>
+                <hr>
+                <p>Az eddigi összes világbajnok egy helyen, képekkel és a világbajnoki címet megszerző évekkel szerepel.
+                    A képekre kattintva további információkat találunk az adott versenyzőről.</p>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <h2>
+                    <span>
+                        <img src="img/csapat_ikon.png" alt="csapat_ikon" style="height: 30px; width: 30px;">
+                    </span> Csapatok
+                </h2>
+                <hr>
+                <p>Ezen az oldalon a Formula-1 négy legmeghatározóbb, legsikeresebb csapatának a történetéről olvashat.
+                    1958-ban hihetetlen fejlődésnek indult a sportág, meghatározva ezzel a Formula-1 jelenlegi
+                    helyzetét. Rengeteg csapat megfordult már a
+                    Formula-1 történetében, leghíresebb és legsikeresebb a Ferrari, viszont vannak olyan csapatok is,
+                    akik csődbe mentek az évek során.</p>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <h2>
+                    <span>
+                        <img src="img/palya_Ikon.png" alt="palya_Ikon" style="height: 30px; width: 30px;">
+                    </span> Pályák
+                </h2>
+                <hr>
+                <p>Ezen az oldalon a 2019-2020-as versenynaptár pályáit találja, időrendi sorrendben a megrendezésük
+                    szerint. A legfontosabb információkat találja a pályákról, például épülésük időpontját, valamint a
+                    pályacsúcsot tartó pilóták neve és ideje.
+                    Ha az adott pályáról készült kép fölé viszi az egeret, akkor láthatja a pálya technikai rajzát is.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <h2>
+                    <span>
+                        <img src="img/biztonsag_ikon.png" alt="biztonsag_ikon" style="height: 30px; width: 30px;">
+                    </span> Biztonság
+                </h2>
+                <hr>
+                <p>Tudta, hogy a kezdetekben még biztonsági öv nélkül versenyeztek a pilóták? Számos ehhez hasonló
+                    biztonsági előírás és intézkedés hiányzott a Formula-1-ből, mondhatni, hogy a biztonság a sportággal
+                    fejlődött. A cikkben a balesetek utáni
+                    intézkedésekről találnak információkat.</p>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <h2>
+                    <span>
+                        <img src="img/hirek_ikon.png" alt="hirek_ikon" style="height: 30px; width: 30px;">
+                    </span> Hírek
+                </h2>
+                <hr>
+                <p>Ne maradjon le a legfrissebb hírekről! Magyarország legnagyobb, magyar nyelvű Formula-1-es
+                    hírportálját találja itt, ahol többek között friss hírekről, pályákról, szabályváltozásokról,
+                    illetve pilótákról is olvashat.</p>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <h2>
+                    <span>
+                        <img src="img/quiz_ikon.png" alt="quiz_ikon" style="height: 30px; width: 30px;">
+                    </span> Quiz
+                </h2>
+                <hr>
+                <p>Ezen az oldalon tesztelheti a tudását! A különböző menüpontokhoz készült kérdéseket találja meg,
+                    mindegyikre egy jó válasz adható. A kérdésekre választ talál a menüpontokban.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h6>Készítette: Varga Attila</h6>
+        <div class="icons" data-toggle="tooltip" data-placement="top" title="Facebook">
+            <a href="https://www.facebook.com/Formula1/" target="_blank">
+                <i class="fab fa-facebook" style="font-size: 50px;" id="face"></i>
+            </a>
+        </div>
+        <div class="icons" data-toggle="tooltip" data-placement="top" title="Youtube">
+            <a href="https://www.youtube.com/user/Formula1" target="_blank">
+                <i class="fab fa-youtube" style="font-size: 50px;" id="youtube"></i>
+            </a>
+        </div>
+        <div class="icons" data-toggle="tooltip" data-placement="top" title="Hivatalos oldal">
+            <a href="https://www.formula1.com" target="_blank">
+                <img src="img/f1_logo_header.png" alt="f1_logo_header" id="offical" style="width: 60px; height: 50px;">
+            </a>
+        </div>
+        <h6 id="terkoz">Legutóbb frissítve: 2019.06.02</h6>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="javascript/index.js"></script>
+</body>
+</html>

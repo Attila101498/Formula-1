@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+<head>
+    <title>Biztonság fejlődése</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link href="img/f1_logo.png" rel="icon"/>
+    <link rel="stylesheet" type="text/css" href="css/biztonsag.css"/>
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascript/gomb.js"></script>
+</head>
+<body>
+    <!--Oldal tetejére gomb-->
+    <a id="button" title="Oldal tetejére"></a>
+    
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-sm" id="nav">
+        <div class="container">
+            <a class="navbar-brand"><img src="img/navlogo.png" alt="logo" style="width: 200px; height: 50px; border-radius: 0px;"/></a>
+            <ul class="navbar-nav">
+                <li class="nav-item mr-2">
+                    <a id="jobb1" class="nav-link" href="index.html">Főoldal</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a id="jobb2" class="nav-link" href="biztonsagquiz.html" target="_blank">Quiz</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container" id="feher">
+        &nbsp;
+        <div class="alert alert-warning alert-dismissible" id="figyelem">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Figyelem!</strong> Az oldalon található videók és képek megzavarhatják egyes olvasóink nyugalmát!
+        </div>
+        <h1>A biztonság hiányának következményei</h1>
+        <div class="row">
+            <div class="col">
+                Az autósport történelemkönyvében a siker és a csillogás lapjai mellett megtalálhatók a halálról, vérről
+                és fájdalomról szóló fejezetek is. A Formula-1-es versenyhétvégéken összesen 25 pilóta vesztette életét,
+                heten Indy500-as versenyen haltak meg (1950 és 1960 között az Indy500 is beleszámított a
+                világbajnokságba). Ehhez hozzá kell még adni azt a 14 versenyzőt, akik teszten, vagy nem hivatalos
+                VB-futamon szenvedtek halálos balesetet. Összesen 49 pilóta hunyt el a Formula-1-gyel párhuzamos
+                versenysorozatokban. Ezek brutális számok. A 25 pilóta közül 19-en a hetvenes években, vagy azelőtt
+                vesztettek életüket. A nyolcvanas években mindössze öt halálos kimenetelű baleset következett be. A 21.
+                században <a href="https://hu.wikipedia.org/wiki/Jules_Bianchi" target="_blank">Jules Bianchi</a> (2014
+                Japán) volt az egyetlen. A Formula-1 biztonsági intézkedései rengeteget fejlődtek az évek során. A
+                kezdeti időszakban katasztrofálisak voltak a körülmények. Ahogy a lenti képeken is látszik, a pilóták
+                biztonsági öv hiányában a kormánykerékbe kapaszkodtak a kanyarokban, valamint nagyon kezdetleges
+                bukósiskot viseltek. 1952 óta kötelező a <b>bukósisak</b>, 1967 óta pedig a <b>biztonsági öv</b>
+                használata. Ez utóbbit viszont nem mindenki használata megfelelő formában – például <a
+                    href="https://hu.wikipedia.org/wiki/Jochen_Rindt" target="_blank">Jochen Rindt</a> 1970-ben Monzában
+                történt balesete esetén.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <img src="img/biztov_1.jpg" alt="biztov_1"/>
+                &nbsp;
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <img src="img/biztov_2.jpg" alt="biztov_2"/>
+            </div>
+        </div>
+        <h1>Egyre gyorsabb autók, halálos balesetek</h1>
+        <div class="row">
+            <div class="col">
+                1958-tól Két világbajnoki címet osztottak ki évente. Egyet a legtöbb pontot szerzett versenyzőnek, egyet
+                pedig a legeredményesebb csapatnak. Az 1960-as években megjelentek az első reklámok a sportágban,
+                amikért a csapatok pénzt kaptak, így még többet tudtak költeni az autók fejlesztésére. Innentől minden
+                csapat arra törekedett, hogy minél gyorsabb autót rakjanak össze. 1967-ig 9 halálos balset történt a
+                Formula-1 versenyhétvégéin:
+                <ul style="padding-top: 20px; list-style-type: circle;">
+                    <li><a href="https://hu.wikipedia.org/wiki/Onofre_Marim%C3%B3n" target="_blank">Onofre Marimón</a>,
+                        Német Nagydíj, 1954</li>
+                    <li><a href="https://hu.wikipedia.org/wiki/Luigi_Musso" target="_blank">Luigi Musso</a>, Francia
+                        Nagydíj, 1958</li>
+                    <li><a href="https://hu.wikipedia.org/wiki/Peter_Collins" target="_blank">Peter Collins</a>, Német
+                        Nagydíj, 1958</li>
+                    <li><a href="https://hu.wikipedia.org/wiki/Stuart_Lewis-Evans" target="_blank">Stuart
+                            Lewis-Evans</a>, Marokkói Nagydíj, 1958</li>
+                    <li><a href="https://hu.wikipedia.org/wiki/Chris_Bristow" target="_blank">Chris Bristowm</a>, Belga
+                        Nagydíj, 1960</li>
+                    <li><a href="https://en.wikipedia.org/wiki/Alan_Stacey" target="_blank">Alan Stacey</a>, Belga
+                        Nagydíj, 1960</li>
+                    <li><a href="https://hu.wikipedia.org/wiki/Wolfgang_von_Trips" target="_blank">Wolfgang Graf Berghe
+                            von Trips</a>, Olasz Nagydíj, 1961</li>
+                    <li><a href="https://en.wikipedia.org/wiki/Carel_Godin_de_Beaufort" target="_blank">Carel Godin de
+                            Beaufort</a>, Német Nagydíj, 1964</li>
+                    <li><a href="https://hu.wikipedia.org/wiki/John_Taylor_(aut%C3%B3versenyz%C5%91)"
+                            target="_blank">John Taylor</a>, Német Nagydíj, 1966</li>
+                </ul>
+            </div>
+            <div class="col-md-auto col-sm-12">
+                <iframe width="500" height="350" style="max-width: 100%; max-height: 100%; border-radius: 10px;"
+                    src="https://www.youtube.com/embed/05REvtzGnpw" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="row" id="terkoz">
+            <div class="col">
+                Az 1967-es Monacoi nagydíjon <a href="https://hu.wikipedia.org/wiki/Lorenzo_Bandini"
+                    target="_blank">Lorenzo Bandini</a> halálos balesetet szenvedett. A 82. körben, a pálya kikötői
+                részén, az alagút utáni sikánban <a href="https://hu.wikipedia.org/wiki/Lorenzo_Bandini"
+                    target="_blank">Lorenzo Bandini</a> autója megcsúszott és egy szalmabálának ütközött. A kocsi
+                kigyulladt, <a href="https://hu.wikipedia.org/wiki/Lorenzo_Bandini" target="_blank">Lorenzo Bandini</a>t
+                három percig nem tudták kiszabadítani az égő roncsból. A tragédiát végigkövették a televízió kamerái.
+                Harmadfokú égési sérüléseket szenvedett, testének 70 százaléka megégett. <a
+                    href="https://hu.wikipedia.org/wiki/Lorenzo_Bandini" target="_blank">Lorenzo Bandini</a> három nap
+                szenvedés után a kórházban meghalt.
+            </div>
+        </div>
+        <h1>Hiányzó biztonsági intézkedések</h1>
+        <div class="row">
+            <div class="col">
+                Az 1968-as hockenheimi Formula-2-es versenyen <a href="https://hu.wikipedia.org/wiki/Jim_Clark"
+                    target="_blank">Jim Clark</a> halálos balesetet szenvedett. Az első rész ötödik körében <a
+                    href="https://hu.wikipedia.org/wiki/Jim_Clark" target="_blank">Jim Clark</a> Lotus 48-asa letért a
+                pályáról és a fáknak ütközött. A skót nyak- és koponyatörést szenvedett, még a kórházba érkezés előtt
+                elhunyt. A baleset pontos oka máig sem ismert, legnagyobb valószínűséggel a hátsó kerék defektje
+                okozhatta a balesetet. <a href="https://hu.wikipedia.org/wiki/Jim_Clark" target="_blank">Jim Clark</a>
+                balesete után jöttek rá, hogy az autók egyre jobban fejlődnek, egyre gyorsabbak, ezzel ellentétben a
+                pályák biztonsági körülményei elavultak, hiszen a legtöbb pályán nem volt bukótér, de még szalagkorlát
+                sem. Ezután kezdték el <b>a pályák biztonságossá tételét</b>, amivel nagyon lassan haladtak, és
+                kezdetben több gond is volt, például a túl alacsony, valamint rosszul rögzített szalagkorláttal.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <img src="img/Jim Clark_crash.jpg" alt="Jim Clark_crash"/>
+                &nbsp;
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <img src="img/Jim Clark_crash2.jpg" alt="Jim Clark_crash2"/>
+            </div>
+        </div>
+        <h1>Posztumusz világbajnok</h1>
+        <div class="row">
+            <div class="col">
+                Azt alighanem szinte mindenki tudja, hogy <a href="https://hu.wikipedia.org/wiki/Jochen_Rindt"
+                    target="_blank">Jochen Rindt</a> a Formula-1 történetének egyetlen posztumusz világbajnoka, aki úgy
+                is világbajnok lett, hogy a szezon közben sajnálatos módon életét vesztette egy versenybalesetben. A
+                fájdalmasan fiatalon, 28 évesen elhunyt osztrák versenyzőnek mindössze hat szezon jutott a
+                Formula-1-ben, amiből az utolsó kettő volt a legsikeresebb. De hogy is alakult az a bizonyos tragikus
+                1970-es év, amikor posztumusz világbajnoki címet szerzett? Akkoriban egy olyan korszakban versenyeztek a
+                sztárok, amikor minden versenynek úgy vágtak neki, hogy tudták, lehet, hogy az az utolsó. Az autók már a
+                hatvanas években is rendkívül gyorsak voltak, viszont ekkor még közel sem volt olyan fejlett a
+                biztonság, mint manapság. Ebben a veszélyes korszakban is külön "kasztot" képezett a Lotus, ahol <a
+                    href="https://hu.wikipedia.org/wiki/Colin_Chapman" target="_blank">Colin Chapman</a> csábítóan
+                gyors, viszont félelmetesen veszélyes autókat tervezett az istálló versenyzői számára. Ezekben az
+                autókban senki nem volt biztonságban, a gyönyörű, de rendkívül veszélyes fekete-arany gépek még
+                világbajnok áldozatot is követeltek <a href="https://hu.wikipedia.org/wiki/Jim_Clark"
+                    target="_blank">Jim Clark</a> személyében. Sorozatban szerzett négy (összesen öt) győzelmének
+                köszönhetően <a href="https://hu.wikipedia.org/wiki/Jochen_Rindt" target="_blank">Jochen Rindt</a>
+                tetemes előnnyel vezette a világbajnokságot <a href="https://hu.wikipedia.org/wiki/Jack_Brabham"
+                    target="_blank">Jack Brabham</a>, <a href="https://hu.wikipedia.org/wiki/Denny_Hulme"
+                    target="_blank">Denny Hulme</a> és <a href="https://hu.wikipedia.org/wiki/Jackie_Stewart"
+                    target="_blank">Jackie Stewart</a> előtt, így Ausztriában (hazai pályán) akár be is biztosíthatta
+                volna a vb-elsőséget, ám hiába állhatott fel ő a pole-pozícióban, őrjöngő honfitársai legnagyobb
+                örömére, a versenyt műszaki hiba miatt nem tudta befejezni. <a
+                    href="https://hu.wikipedia.org/wiki/Jochen_Rindt" target="_blank">Jochen Rindt</a>ben ekkor már
+                sziklaszilárdan megvolt az elhatározás, hogy a vb-cím megszerzése esetén visszavonul. Olaszországban
+                végül tragikus módon csak az egyik vágya teljesült: az időmérőn a Parabolica felé haladva egyszer csak
+                elvesztette uralmát autója felett, és menthetetlenül csapódott bele a szalagkorlátba, aminek a végén nem
+                tudták megmenteni az életét. Hiába akart tehát visszavonulni, a halál gyorsabb volt nála, amitől az
+                osztrák versenyző karrierje végén már rettenetesen félt. Az Olasz Nagydíjat követően viszont akkora
+                előnye volt, hogy a szezon végéig halála ellenére sem tudta őt senki utolérni, így is megszerezte a
+                világbajnoki címet, legalább ez a vágya teljesült. Viszont huszonnyolc évesen egy potenciális többszörös
+                világbajnokot vesztett el a mezőny.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <iframe width="500" height="350" style="max-width: 100%; max-height: 100%; border-radius: 10px;"
+                    src="https://www.youtube.com/embed/bX1E2ojC03I" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <img src="img/Jochen Rindt_crash.jpg" alt="Jochen Rindt_crash"/>
+            </div>
+        </div>
+        <h1>Tűzesetek a Formula-1-ben</h1>
+        <div class="row">
+            <div class="col">
+                Számos Formula-1-es pilóta lett a lángok áldozata: <a
+                    href="https://hu.wikipedia.org/wiki/Stuart_Lewis-Evans" target="_blank">Stuart Lewis-Evans</a>
+                1958-ban Marokkóban, <a href="https://hu.wikipedia.org/wiki/Lorenzo_Bandini" target="_blank">Lorenzo
+                    Bandini</a> 1967-ben Monacóban, <a href="https://hu.wikipedia.org/wiki/Jo_Schlesser"
+                    target="_blank">Jo Schlesser</a> 1968 Franciaországban. Az 1970-es Spanyol nagydíjon <a
+                    href="https://hu.wikipedia.org/wiki/Jackie_Oliver" target="_blank">Jackie Oliver</a> és <a
+                    href="https://hu.wikipedia.org/wiki/Jacky_Ickx" target="_blank">Jacky Ickx</a> összeütközött, majd
+                mindkettejük autója kigyulladt. Ebben a balesetben szerencsére senkinek sem sérült meg komolyabban. <a
+                    href="https://hu.wikipedia.org/wiki/Roger_Williamson" target="_blank">Roger Williamson</a> 1973-ban
+                Zandvoortban vesztette életét. A Formula-1 talán egyik legszomorúbb pillanata lehetett ez a nézők és a
+                versenyzők számára, ugyanis <a href="https://hu.wikipedia.org/wiki/Roger_Williamson"
+                    target="_blank">Roger Williamson</a> autója felborult, majd ezután rögtön kigyulladt. Egyik
+                versenyzőtársa, <a href="https://hu.wikipedia.org/wiki/David_Purley" target="_blank">David Purley</a>
+                félreállt, és elkeseredten próbálta visszaborítani az autót. A pálybírók tehetetlenül nézték, tűzálló
+                felszerelés hiányában nem tudtak az autóhoz érni, valamint a versenyzők közül sem álltak meg mások. <a
+                    href="https://hu.wikipedia.org/wiki/Roger_Williamson" target="_blank">Roger Williamson</a> az
+                autóban vesztette életét. <a href="https://hu.wikipedia.org/wiki/Ronnie_Peterson" target="_blank">Ronnie
+                    Peterson</a> túlélte az 1978-as tűzesetet, azonban a kórházban elhunyt. A mai Formula-1-es autókban
+                van <b>automatikus tűzoltóberendezés</b>, ha a pilótafülkében tűz ütne ki. 1975 óta a pilóták <b>tűzálló
+                    overállban</b> versenyeznek.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <iframe width="500" height="350" style="max-width: 100%; max-height: 100%; border-radius: 10px;"
+                    src="https://www.youtube.com/embed/a9p-G7lHYAo" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <iframe width="500" height="350" style="max-width: 100%; max-height: 100%; border-radius: 10px;"
+                    src="https://www.youtube.com/embed/K1F28gUTnig" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <h1>Az 1973-as silverstone-i baleset</h1>
+        <div class="row">
+            <div class="col">
+                Az 1973-ban rendezett Brit Nagydíj az F1 történetének egyik legnagyobb tömegbalesetéről maradt örökre
+                emlékezetes, ami egy időre megpecsételte <a href="https://hu.wikipedia.org/wiki/Jody_Scheckter"
+                    target="_blank">Jody Scheckter</a> megítélését a riválisok szemében. A rajt után a második sorból
+                induló <a href="https://hu.wikipedia.org/wiki/Jackie_Stewart" target="_blank">Jackie Stewart</a> vágott
+                az élre, megelőzve <a href="https://hu.wikipedia.org/wiki/Ronnie_Peterson" target="_blank">Ronnie
+                    Peterson</a>t, míg a három McLaren egymás nyakán találta magát mögöttük. <a
+                    href="https://hu.wikipedia.org/wiki/Jody_Scheckter" target="_blank">Jody Scheckter</a> eltökélte,
+                hogy az első kör végére átugorja mindkét csapattársát, és a célegyenesre kanyarodva támadást indított <a
+                    href="https://hu.wikipedia.org/wiki/Denny_Hulme" target="_blank">Denny Hulme</a> ellen. A gyorsabb
+                dél-afrikai a külső ívre húzódott, ám túl szélesen fordult, lecsúszott a fűre, ahol autója már
+                irányíthatatlanná vált: a McLaren a pályára visszatörve a bokszutca falába csapódott és keresztben állt
+                a célegyenesben. <a href="https://hu.wikipedia.org/wiki/Denny_Hulme" target="_blank">Denny Hulme</a>
+                mellett a közvetlenül mögötte érkező <a href="https://hu.wikipedia.org/wiki/Peter_Revson"
+                    target="_blank">Peter Revson</a> is szerencsés volt, hogy elkerülte a balesetet, az utána érkezők
+                közül azonban sokan már nem mondhatták el ezt magukról. Miután az első autó nekirohant <a
+                    href="https://hu.wikipedia.org/wiki/Jody_Scheckter" target="_blank">Jody Scheckter</a>nek, a
+                láncreakció elkerülhetetlen volt, és a McLarennel együtt összesen kilenc modell jutott azonnal a kiesés
+                sorsára a tömegbalesetben. Az F1 története során második alkalommal a piros zászló is előkerült, noha
+                csak képletesen, hiszen a célegyenesben sárgákat lengetve állították meg a mezőnyt - a verseny
+                mindenesetre megszakadt. A kor biztonsági körülményei mellett már az is örömteli volt, hogy senki nem
+                sérült meg súlyosan, egyedül <a href="https://hu.wikipedia.org/wiki/Andrea_de_Adamich"
+                    target="_blank">Andrea de Adamich</a> szerzett bokatörést és ijedtséget is keltett, hogy az olaszt
+                fél óráig nem tudták kiszabadítani autójából. Sérülése azonban eléggé hátráltatta őt abban, hogy a
+                későbbiekben már ne is tudjon visszatérni a mezőnybe.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <img src="img/silverstone_2.jpg" alt="silverstone_2"/>
+                &nbsp;
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <img src="img/silverstone_3.jpg" alt="silverstone_3"/>
+            </div>
+        </div>
+        <h1>A nézők sem voltak mindig biztonságban</h1>
+        <div class="row">
+            <div class="col">
+                A helyszínre kilátogató nézők ma már biztonságban érezhetik magukat, és a pilóták testi épségére is
+                sokkal nagyobb figyelmet fordítanak a szervezők. Ez azonban nem volt mindig így: az 1928-as Olasz
+                Nagydíjon 41 ember vesztette életét, amikor <a href="https://en.wikipedia.org/wiki/Emilio_Materassi"
+                    target="_blank">Emilio Materassi</a> autója a közönség soraiba csapódott. 1961-ben <a
+                    href="https://hu.wikipedia.org/wiki/Wolfgang_von_Trips" target="_blank">Graf Berghe von Trips</a>
+                balesete 14 ember életét követelte. A valaha volt legsúlyosabb versenybaleset 1955-ben történt, a LeMans
+                24 órás versenyén. Egy szerencsétlen boxkiállás során, <a
+                    href="https://hu.wikipedia.org/wiki/Lance_Macklin" target="_blank">Lance Macklin</a> lassuló autója
+                a mögötte nagy tempóval érkező <a href="https://hu.wikipedia.org/wiki/Pierre_Levegh"
+                    target="_blank">Pierre Levegh</a> elé került. A nagy sebességkülönbségű ütközés után <a
+                    href="https://hu.wikipedia.org/wiki/Pierre_Levegh" target="_blank">Pierre Levegh</a> kocsija a
+                levegőbe repült, egyenesen a nézőtér felé. <a href="https://hu.wikipedia.org/wiki/Pierre_Levegh"
+                    target="_blank">Pierre Levegh</a> az ütközés következtében kirepült a Mercedesből és szörnyethalt. A
+                magnéziumfelépítésű autó azonnal lángra lobbant. A szétroncsolt versenyautó és alkatrészei iszonyatos
+                tempóval zuhantak a nézők közé, 84 ember vesztette életét és további 100 sérült meg. A pilóták között
+                nem találtak kizárólagos felelőst, a szakértők a 30 éves pálya felépítését kritizálták, ami
+                alkalmatlannak bizonyult ilyen gyorsaságú autók versenyeztetéséhez. A Mercedes 1989-ig kivonult a
+                versenyzésből. Az 1975-ös Spanyol nagydíjon <a href="https://hu.wikipedia.org/wiki/Rolf_Stommelen"
+                    target="_blank">Rolf Stommelen</a> hátsó szárnya eltört, és a szalagkorláthoz közvetlen közel álló
+                nézők felé csapódott, <a href="https://hu.wikipedia.org/wiki/Rolf_Stommelen" target="_blank">Rolf
+                    Stommelen</a> súlyosan megsérült, de felépült, viszont 5 néző életét vesztette. A pályák
+                fejlődésével a nézőket is egyre jobban elkezdték kiszorítani a pályák közvetlen közeléből, megjelentek a
+                <b>bukóterek</b>, <b>a korlátokat pedig megmagasították</b>, innentől fogva <b>a nézők nem állhattak a
+                    szalagkorlát közvetlen közelében.</b>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <img src="img/1955-24-Hours-of-LeMans.jpg" alt="LeMans"/>
+                &nbsp;
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <img src="img/rolfbalesete.jpg" alt="rolfbalesete"/>
+            </div>
+        </div>
+        <h1>Niki Lauda balesete</h1>
+        <div class="row">
+            <div class="col">
+                <a href="https://hu.wikipedia.org/wiki/Niki_Lauda" target="_blank">Niki Lauda</a> 1976-os nürburgringi
+                balesete egy jó példa a biztonsági intézkedések eredményére. A nürburgringgel kapcsolatban már korábban
+                is voltak fentartások, hiszen a pálya nagyon hosszú volt és rengeteg helyen elemelkedtek az autók az
+                aszfaltról. <a href="https://hu.wikipedia.org/wiki/Niki_Lauda" target="_blank">Niki Lauda</a> javasolta,
+                hogy ne álljanak rajthoz a versenyzők, ám ezt akkori legnagyobb riválisa, <a
+                    href="https://hu.wikipedia.org/wiki/James_Hunt" target="_blank">James Hunt</a> elvetette, így a
+                verseny megtartásra került. <a href="https://hu.wikipedia.org/wiki/Niki_Lauda" target="_blank">Niki
+                    Lauda</a> szalagkorlátnak ütközött, aminek következtében autója kigyulladt. A mögötte érkező <a
+                    href="https://hu.wikipedia.org/wiki/Brett_Lunger" target="_blank">Brett Lunger</a>rel összeütközött,
+                aki azonnal a segítségére sietett, ám a ferrarinak más volt a biztonsági öve és nem tudta kikapcsolni.
+                Szerencsére <a href="https://hu.wikipedia.org/wiki/Arturo_Merzario" target="_blank">Arturo Merzario</a>
+                félreállt, aki korábban tesztelt Ferrarit, így ő ki tudta kapcsolni a biztonsági övet, <a
+                    href="https://hu.wikipedia.org/wiki/Brett_Lunger" target="_blank">Brett Lunger</a> pedig ki tudta
+                húzni <a href="https://hu.wikipedia.org/wiki/Niki_Lauda" target="_blank">Niki Lauda</a>t az égő
+                roncsból. <a href="https://hu.wikipedia.org/wiki/Niki_Lauda" target="_blank">Niki Lauda</a> kórházba
+                került. Súlyos égési sérülésekkel, a belélegzett gázoktól tüdő-problémákkal élet-halál között lebegett
+                napokig. <a href="https://hu.wikipedia.org/wiki/Niki_Lauda" target="_blank">Niki Lauda</a> 26.
+                születésnapjára lepte meg saját magát egy <b>tűzálló overállal</b> 1975-ben, amit 65 000 schillingért
+                vásárolt. A nürburgringi baleset a ruha gyakorlati értékét mutatta meg, hogy <a
+                    href="https://hu.wikipedia.org/wiki/Niki_Lauda" target="_blank">Niki Lauda</a> csak a ruha által nem
+                védett testfelületen égett meg. <a href="https://hu.wikipedia.org/wiki/Niki_Lauda" target="_blank">Niki
+                    Lauda</a> 5 hét után ismét autóba ült. <a href="https://hu.wikipedia.org/wiki/Niki_Lauda"
+                    target="_blank">Niki Lauda</a> <b>balesete miatt helyezték át később a Német Nagydíjat a
+                    Hockenheimringre</b>.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <iframe width="500" height="350" style="max-width: 100%; max-height: 100%; border-radius: 10px;"
+                    src="https://www.youtube.com/embed/vstZpPU2pMc" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <img src="img/Niki Lauda baleset.jpg" alt="Lauda"/>
+            </div>
+        </div>
+        <h1>Bernie Ecclestone korszaka és újításai</h1>
+        <div class="row">
+            <div class="col-md-5 col-sm-12">
+                <div class="card">
+                    <img class="card-img-top" src="img/bernie_ecclestone.jpg" alt="bernie_ecclestone">
+                    <div class="card-body">
+                        <h4 class="card-title">Bernie Ecclestone</h4>
+                        <p class="card-text">Bernie Ecclestone 1974-ben.</p>
+                        <a href="https://hu.wikipedia.org/wiki/Bernie_Ecclestone" class="btn btn-info" target="_blank"
+                            style="color: brown;">Olvass tovább!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7 col-sm-12">
+                Nem túlzás azt állítani, hogy <a href="https://hu.wikipedia.org/wiki/Bernie_Ecclestone"
+                    target="_blank">Bernie Ecclestone</a> rengeteget tett a biztonság fejlődéséért. 1976-ban <a
+                    href="https://hu.wikipedia.org/wiki/Bernie_Ecclestone" target="_blank">Bernie Ecclestone</a>
+                megvette a világ összes tévés közvetítési jogát 1 millió dollárért. A többi, 9 csapat főnöknek 100.000
+                dollárért részesedésért cserébe ajánlott jogokat, ám ők nem kértek belőle, hiszen akkoriban ez rengeteg
+                pénz volt és úgy gondolták inkább tesztelésre, fejlesztésre költik. Ezzel <a
+                    href="https://hu.wikipedia.org/wiki/Bernie_Ecclestone" target="_blank">Bernie Ecclestone</a>
+                egyeduralkodóvá vált, az 1976-os Japán nagydíj óta az ő kezében van az összes közvetítési jog. Az
+                1976-os Japán nagydíj több szempontból is sorsdöntő volt, ugyanis ezen a versenyen dőlt el a
+                világbajnoki cím <a href="https://hu.wikipedia.org/wiki/James_Hunt" target="_blank">James Hunt</a> és <a
+                    href="https://hu.wikipedia.org/wiki/Niki_Lauda" target="_blank">Niki Lauda</a> között. A versenyen
+                végig esett az eső, konkrétan az egész pályát víz borította, így a látótávolság nagyon rossz volt. <a
+                    href="https://hu.wikipedia.org/wiki/Niki_Lauda" target="_blank">Niki Lauda</a> nem vélte
+                biztonságosnak a helyzetet, és a Formula-1 történetében először önként feladta a versenyt. Ezzel <a
+                    href="https://hu.wikipedia.org/wiki/James_Hunt" target="_blank">James Hunt</a> lett a világbajnok,
+                de a nagy áttörés mégis <a href="https://hu.wikipedia.org/wiki/Niki_Lauda" target="_blank">Niki
+                    Lauda</a> nevéhez köthető, hiszen rájöttek arra, hogy ha a legnagyobb hírnévvel bíró pilóták nem
+                hajlandóak versenyezni, akkor nem lesz többé jövője a Formula-1-nek. A televiziós közvetítések is
+                fontosak voltak, hiszen senki sem akarta látni, ahogy a kedvenc pilótája életét veszti egy versenyen. <a
+                    href="https://hu.wikipedia.org/wiki/Bernie_Ecclestone" target="_blank">Bernie Ecclestone</a>
+                belátta, hogy cselekedni kell. <a href="https://hu.wikipedia.org/wiki/Bernie_Ecclestone"
+                    target="_blank">Bernie Ecclestone</a> <b>tovább folytatta a pályák biztonságossá tételét</b>, a
+                <b>bukóterek</b> egyre több helyen jelentek meg, a <b>szalagkorlátok</b> elé pedig <b>gumifalak</b>
+                kerültek, amelyek segítik elnyelni az ütközések erejét.
+            </div>
+        </div>
+        <h3>Dr. Sid Watkins - A Formula-1 első, hivatalos orvosa</h3>
+        <div class="row">
+            <div class="col-md-7 col-sm-12">
+                1978-tól <a href="https://hu.wikipedia.org/wiki/Bernie_Ecclestone" target="_blank">Bernie Ecclestone</a>
+                kinevezte <a href="https://en.wikipedia.org/wiki/Sid_Watkins" target="_blank">Dr. Sid Watkins</a>t a
+                Formula-1 első hivatalos orvosának. Kezdetben elég nehezen fogadták <a
+                    href="https://en.wikipedia.org/wiki/Sid_Watkins" target="_blank">Dr. Sid Watkins</a>t, hiszen minden
+                csapatnak megvolt a saját orvosa és nem akarták, hogy parancsolgassanak nekik. <a
+                    href="https://hu.wikipedia.org/wiki/Bernie_Ecclestone" target="_blank">Bernie Ecclestone</a> nagyon
+                ragaszkodott <a href="https://en.wikipedia.org/wiki/Sid_Watkins" target="_blank">Dr. Sid Watkins</a>hoz,
+                ezt nagyon jól bizonyítja az 1978-as német nagydíj. A rajt előtt pár perccel a szervezők leküldték <a
+                    href="https://en.wikipedia.org/wiki/Sid_Watkins" target="_blank">Dr. Sid Watkins</a>t a pályáról, <a
+                    href="https://hu.wikipedia.org/wiki/Bernie_Ecclestone" target="_blank">Bernie Ecclestone</a> válasza
+                csak ennyi volt: „Pakoljunk, hiszen itt ma nem lesz verseny.” A szervezők a több mint 80.000 nézőre
+                hivatkoztak, <a href="https://hu.wikipedia.org/wiki/Bernie_Ecclestone" target="_blank">Bernie
+                    Ecclestone</a> azt mondta, küldjék haza őket. Pár perc múlva jött a válasz, hogy természetesen <a
+                    href="https://en.wikipedia.org/wiki/Sid_Watkins" target="_blank">Dr. Sid Watkins</a> maradhat, és
+                elstartolt a verseny. Egy másik, ennél sokkal szomorúbb történet az 1978-as monzai nagydíj. <a
+                    href="https://hu.wikipedia.org/wiki/Ronnie_Peterson" target="_blank">Ronnie Peterson</a> az első
+                körben balesetet szenvedett, és eltört mindkét lába. <a href="https://en.wikipedia.org/wiki/Sid_Watkins"
+                    target="_blank">Dr. Sid Watkins</a>t 20 percig nem engedték oda, <a
+                    href="https://hu.wikipedia.org/wiki/Ronnie_Peterson" target="_blank">Ronnie Peterson</a>t
+                mentőhelikopterrel szállították kórházba, ám masnap embóliában meghalt. Ha <a
+                    href="https://en.wikipedia.org/wiki/Sid_Watkins" target="_blank">Dr. Sid Watkins</a>t oda engedték
+                volna, akkor <a href="https://hu.wikipedia.org/wiki/Ronnie_Peterson" target="_blank">Ronnie Peterson</a>
+                túlélte volna a balesetet. Ettől a versenytől fogva <a href="https://en.wikipedia.org/wiki/Sid_Watkins"
+                    target="_blank">Dr. Sid Watkins</a> <b>az első kört (ami a legveszélyesebbnek számít) autóban
+                    követte</b>, hogy, ha kell a segítség, akkor azonnal odaérjen. Ez egyébként <b>a mai napig így van a
+                    Formula-1-ben</b>. <a href="https://en.wikipedia.org/wiki/Sid_Watkins" target="_blank">Dr. Sid
+                    Watkins</a> <b>egységesítette a Formula-1 orvosi felszerelését, 1978 óta létezik állandó
+                    elsősegély-szolgálat, 1980 óta üzemelnek a pályakórházak, 1986 óta van mentőhelikopter minden
+                    versenypályán a tesztek és a verseny ideje alatt</b>.
+            </div>
+            <div class="col-md-5 col-sm-12">
+                <div class="card">
+                    <img class="card-img-top" src="img/watkins.jpg" alt="Watkins">
+                    <div class="card-body">
+                        <h4 class="card-title">Dr. Sid Watkins</h4>
+                        <p class="card-text">A Formula-1 első orvosának eredeti foglalkozása agysebész volt.</p>
+                        <a href="https://en.wikipedia.org/wiki/Sid_Watkins" class="btn btn-info" target="_blank"
+                            style="color: brown;">Olvass tovább!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1>A Formula-1 fekete hétvégéjé</h1>
+        <div class="row">
+            <div class="col">
+                Az 1994-es San Marinó-i Nagydíj hétvégéjén több súlyos baleset is történt, és két versenyző, <a
+                    href="https://hu.wikipedia.org/wiki/Roland_Ratzenberger" target="_blank">Roland Ratzenberger</a> és
+                <a href="https://hu.wikipedia.org/wiki/Ayrton_Senna" target="_blank">Ayrton Senna</a> el is hunyt a
+                sérüléseik következtében. Az autóversenyzés történetének egyik tragikus fejezetét írták az 1994-es San
+                Marinó-i Nagydíj napjai során, amit azóta gyakran csak fekete hétvégeként emlegetnek. Pénteken az első
+                időmérő edzésen <a href="https://hu.wikipedia.org/wiki/Rubens_Barrichello" target="_blank">Rubens
+                    Barrichello</a> repült ki a pályáról, és szenvedett életveszélyes sérüléseket, szombaton <a
+                    href="https://hu.wikipedia.org/wiki/Roland_Ratzenberger" target="_blank">Roland Ratzenberger</a>
+                elhunyt balesetének következményei miatt. <a href="https://hu.wikipedia.org/wiki/Roland_Ratzenberger"
+                    target="_blank">Roland Ratzenberger</a>nek ez volt az első és egyben utolsó versenyhétvégéje,
+                amelyben autóban ült. A hétvége történetéhez kapcsolódik, hogy <a
+                    href="https://hu.wikipedia.org/wiki/Roland_Ratzenberger" target="_blank">Roland Ratzenberger</a>
+                balesete után az orvosok nem állapították meg a helyszínen a pilóta egyértelmű halálát, mert akkor a
+                futamot az olasz törvények miatt nem lett volna szabad megrendezni. Vasárnap <a
+                    href="https://hu.wikipedia.org/wiki/JJ_Lehto" target="_blank">J. J. Lehto</a> állva maradt a
+                rajtnál, a mögötte érkező <a href="https://hu.wikipedia.org/wiki/Pedro_Lamy" target="_blank">Pedro
+                    Lamy</a> az autójába csapódott, és a leszakadó törmelékek kilenc nézőt könnyebben megsebesítettek. A
+                Safety Car periódus után nem sokkal az élen haladó <a href="https://hu.wikipedia.org/wiki/Ayrton_Senna"
+                    target="_blank">Ayrton Senna</a> kivágódott, a betonfalnak ütközött, és az életét már nem tudták
+                megmenteni. Közben egy elszabadult kerék több szerelőt is megsebesített a bokszban. Mai szemmel meglepő,
+                hogy az ominózus rajtbaleset után nem állították le a versenyt, sőt akkoriban még az sem volt divat,
+                hogy a részben eltorlaszolt célegyenes helyett a bokszutcán vezesse végig a Safety Car a mezőnyt. A BBC
+                legendás kommentátora, <a href="https://en.wikipedia.org/wiki/Murray_Walker" target="_blank">Murray
+                    Walker</a> aznap azt mondta, ez volt „a legsötétebb nap az autósport történetében, amire emlékszem”.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">    
+                <iframe width="500" height="350" style="max-width: 100%; max-height: 100%; border-radius: 10px;" 
+                    src="https://www.youtube.com/embed/3-lwl74lENo" frameborder="0" 
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>    
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <iframe width="500" height="350" style="max-width: 100%; max-height: 100%; border-radius: 10px;"
+                    src="https://www.youtube.com/embed/8qYXVfY_9IE" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <h1>Leszakadó gumiabroncsok</h1>
+        <div class="row">
+            <div class="col">
+                A leszakadó gumiabroncsok rengeteg balesetet, sokszor nézők, pályabírók életét követelték. Bár az F1-ben
+                már 1999-ben bevezették a kerekek leszakadását elvileg meggátló rögzítőláncok alkalmazását, ezek
+                működése nem volt tökéletes, jó néhányszor röpködtek az abroncsok. A Formula-1-ben szigorították a
+                kerekek rögzítésére vonatkozó előírásokat, miután a Nemzetközi Automobil Szövetség (FIA) elvégezte a
+                2013-as Német nagydíjon történt baleset hátterének részletes elemzését. A nürburgringi bokszutcában egy
+                operatőr bordatörést szenvedett, amikor a <a
+                    href="https://hu.wikipedia.org/wiki/Mark_Webber_(aut%C3%B3versenyz%C5%91)" target="_blank">Mark
+                    Webber</a> Red Bulljáról lerepülő kerék hátulról eltalálta. <b>Az FIA azonnal korlátozásokat
+                    vezetett be arra vonatkozóan, hogy mikor kik tartózkodhatnak a bokszutcában</b>. A vizsgálat során
+                fényt derítettek a baleset körülményeire is, és rájöttek, hogy miért szabadult el a kerék. Bár azokat
+                régóta egy speciális kábellel rögzítik az autóhoz, hogy ilyesmi ne fordulhasson elő, kiderült, hogy ez a
+                megoldás csak akkor működik megbízhatóan, ha a kereket már biztonságosan felhelyezték a tengelyre.
+                Amennyiben ez még nem történt meg - például beszakadt a menet, vagy az autó túl korán indult el -, a
+                lötyögő kerék a kábel ellenére is lerázódhat. Ezért az FIA új, <b>kétkábeles rendszer</b> használatát
+                tette kötelezővé a csapatok számára. Az első kábel akkor biztosítja a kereket, ha azt az anyával
+                megfelelően rögzítették, a második pedig akkor, ha az már a tengelyen van, de még nincs teljesen a
+                helyén. A képen jól látható, hogy a kerék súlyosan roncsolódott, ám az ütközés ellenére is az autón
+                maradt. Ezzel az intézkedéssel jelentősen növelték a biztonságot.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <iframe width="500" height="350" style="max-width: 100%; max-height: 100%; border-radius: 10px;"
+                    src="https://www.youtube.com/embed/pnYZVlrSU1A" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <img src="img/wheel.jpg" alt="wheel"/>
+            </div>
+        </div>
+        <h1>A verseny közbeni tankolás és veszélyei</h1>
+        <div class="row">
+            <div class="col">
+                A versenyek közben történő tankolást a sportág történetének több időszakában is engedélyezték. Amikor
+                legutóbb ezt lehetővé tették, az rendkívül ellentmondásosra sikerült. 1994-ben majdnem minden csapat
+                ellenezte az ötletet. A Ferrari egyedül támogatta a kezdeményezést, ők ugyanis úgy vélték, hogy a V12-es
+                motorból így tudják majd a legtöbbet kihozni. Az ígéretek szerint a berendezés nem szivároghat, ezáltal
+                nem lesznek tűzesetek a boxutcában. Az élet hamar megcáfolta ezt: az 1994-es Német Nagydíjon <a
+                    href="https://hu.wikipedia.org/wiki/Jos_Verstappen" target="_blank">Jos Verstappen</a> Benettonja
+                lángra kapott, az esetben a holland pilóta és a szerelők egy része is megsérült. <b>2009-ben törölték el
+                    a futam közbeni tankolást</b> a Formula-1-ben a 2007-2008-2009-ben történt bokszutcai esetek miatt,
+                valamint költségcsökkentési okokból. a tűzveszély addig folyamatosan fennállt. A tankolás egy érdekes
+                színfoltja volt a futamoknak. Stratégiai fegyverként is használták, valamint történtek helycserék is a
+                kiállások során. Tény, hogy például a 2008-as Szingapúri Nagydíjon történtek nem voltak éppen
+                megnyugtatók (<a href="https://hu.wikipedia.org/wiki/Felipe_Massa" target="_blank">Felipe Massa</a>
+                autóján rajta maradt a cső). Ugyanezen a futamon szenvedtek a legtöbbet az akkori szabályok miatt is,
+                mely szerint a boxutcát bezárják, ha a biztonsági autó a pályára hajt. Számtalan büntetést osztottak ki
+                amiatt, hogy a versenyzőknek muszáj volt kimenniük tankolni, hiszen egyébként megállt volna alattuk az
+                autó.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <iframe width="500" height="350" style="max-width: 100%; max-height: 100%; border-radius: 10px;"
+                    src="https://www.youtube.com/embed/scA9WlKCBG8" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <iframe width="500" height="350" style="max-width: 100%; max-height: 100%; border-radius: 10px;"
+                    src="https://www.youtube.com/embed/cHuhgC9tEyo" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <h1>A halo bevezetése</h1>
+        <div class="row">
+            <div class="col">
+                A 2010-es évekre a biztonság szinte teljesen kifejlődött, rengeteg változtatás történt a sportág kezdete
+                óta. Egy dolog azonban még visszavolt: A pilóták feje egészen 2018-ig védtelen volt, ám ekkor egy
+                halálos balaset hatására minden megváltozott. Korábban is történtek balasetek, ahol egy esetleges
+                védőszerkezet megakadályozhatta volna a baleseteket. Gondoljunk csak <a
+                    href="https://hu.wikipedia.org/wiki/Felipe_Massa" target="_blank">Felipe Massa</a> 2009-es
+                magyarországi balasetére, amikor egy másik autóról lepattanó rugó eltalálta <a
+                    href="https://hu.wikipedia.org/wiki/Felipe_Massa" target="_blank">Felipe Massa</a> sisakját, aki
+                eszméletét vesztette és gumifalba csapódott. Hosszú idők óta ment a vita, miszerint a pilótafülkéknek
+                zártnak kellene lenniük. Ez az ötlet azonabn súlyos ellenállásba ütközött, hiszen egy teljesen zárt
+                fülkéből egy esetleges baleset során nagyon nehéz lenne kiszállni. <a
+                    href="https://hu.wikipedia.org/wiki/Justin_Wilson" target="_blank">Justin Wilson</a> a pennsylvaniai
+                Pocono Racewayen megtartott 2015-ös indyCar versenyen szenvedett rendkívül balszerencsés balesetet. <a
+                    href="https://en.wikipedia.org/wiki/Sage_Karam" target="_blank">Sage Karam</a> az autójával a falnak
+                csapódott, kocsijának orra letört, és a mögötte haladó <a
+                    href="https://hu.wikipedia.org/wiki/Justin_Wilson" target="_blank">Justin Wilson</a> fejének
+                csapódott, aminek következtében eszméletét vesztette, később pedig elhunyt. Ekkor kezdtek igazán
+                gondolkodni egy alternatív megoldáson, ami végül is a <b>Halo vagy ismertebb nevén Glória</b> lett. A
+                Halot 2018-ban vezették be a Formula-1-ben, annak érdekében, hogy a pilóták fejét megvédje. A fejvédő –
+                gyenge esztétikai minősége miatt – igencsak megosztotta a Formula-1 világát: sokan úgy gondolták, a
+                sport ezzel az elemmel elveszíti varázsát, és aki itt versenyez, vállalja, hogy a motorsport veszélyes.
+                Mások szerint, ha lehetőségük van rá, igenis fejleszteniük kell a biztonságot, hiszen lehet, hogy ezzel
+                életeket menthetnek, és a legfontosabb a versenyzők épsége.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <iframe width="500" height="350" style="max-width: 100%; max-height: 100%; border-radius: 10px;"
+                    src="https://www.youtube.com/embed/1cwbrhHcvtg" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <iframe width="500" height="350" style="max-width: 100%; max-height: 100%; border-radius: 10px;"
+                    src="https://www.youtube.com/embed/X6GGwYJ6Me8" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <h3>Életet mentett a Halo</h3>
+        <div class="row">
+            <div class="col">
+                A 2018-as Belga Nagydíjon, közvetlenül a rajt után <a
+                    href="https://hu.wikipedia.org/wiki/Charles_Leclerc_(aut%C3%B3versenyz%C5%91)"
+                    target="_blank">Charles Leclerc</a> és <a href="https://hu.wikipedia.org/wiki/Fernando_Alonso"
+                    target="_blank">Fernando Alonso</a> keveredett incidensbe, amikor a spanyol pilóta autója átrepült a
+                Sauber felett, érintve a fejvédő szerkezetet. Hogy pontosan mi történt volna, ha nincs az autón a Halo,
+                azt az FIA kezdte vizsgálni, és hosszú hónapok után, felfedték a kutatás eredményét, amely alapján
+                kiderült: nem kétség, a Halo bizonyított. Az esetet követően rengeteg pozitív nyilatkozat érkezett a
+                Halóval kapcsolatban – sokan a korábbi kétkedők közül is azt mondták, bizonyított a fejvédő rendszer,
+                nincs többé kérdés vele kapcsolatban. A vizsgálat eredményeként kiderült, a Halo megmentette <a
+                    href="https://hu.wikipedia.org/wiki/Charles_Leclerc_(aut%C3%B3versenyz%C5%91)"
+                    target="_blank">Charles Leclerc</a>-et egy súlyos – vagy annál is komolyabb – sérüléstől. Az
+                elemzésből kiderült, hogy <a href="https://hu.wikipedia.org/wiki/Fernando_Alonso"
+                    target="_blank">Fernando Alonso</a> kereke nem, azonban az első vezetőszárnyának véglapja elérte
+                volna a monacói sisakrostélyát a Halo nélkül, így akár át is törhette volna azt. <b>A nyitott
+                    pilótafülkés FIA-szériákban, ahol idén még nem láthattuk a Halót – vagyis a Formula-3-ban és a
+                    Formula-E-ben is – bevezetik 2019-ben a már abszolút pozitívumnak számító fejvédőt</b>.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <iframe width="500" height="350" style="max-width: 100%; max-height: 100%; border-radius: 10px;"
+                    src="https://www.youtube.com/embed/BcaUD7JJt1w" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <img src="img/halo.jpg" alt="halo"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                A mai pilóták ezeknek az intézkedéseknek a hátására már a lehető legnagyobb biztonságban érezhetik
+                magukat. Rengeteg baleset történt azóta, amelyek régen halálos kimenetelű balasetnek számítottak volna,
+                azonban szerencsére túléltek a versenyzők. A Formula-1-ben azóta is elsődleges szerepet játszik a
+                biztonság, hiszen már eddig is nagyon sokan vesztették életüket az autósportban. A kockázat továbbra is
+                fennáll és ezt a pilóták is tudják.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

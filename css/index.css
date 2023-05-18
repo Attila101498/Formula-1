@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+/* Háttér formázása */
+div.header img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* Információs szöveg formázása */
+body hr {
+    max-width: 200px;
+    border: 3px solid black;
+    margin-top: 30px;
+}
+
+p {
+    font-family: 'Maitree', serif;
+    font-size: 18px;
+}
+
+
+/* Címsorok formázása */
+h2 {
+    color: red;
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+
+/* Kijelölés színének, hátterének megadása */
+::selection {
+    color: red;
+    background: black;
+}
+
+
+/* A menüsor formázása */
+body {
+    margin: 0;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #010101;
+    font-family: 'Maitree', serif;
+}
+
+div.dropdown-menu {
+    background-color: red;
+}
+
+div.dropdown-menu a:hover {
+    background-color: black;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.topnav a:hover {
+    background-color: red;
+    text-decoration: none;
+    color: white;
+}
+
+.active {
+    background-color: red;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+#jobb {
+    float: right;
+}
+
+
+/* A column-ok formázása */
+.col-md-4 {
+    float: left;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    font-size: 20px;
+    text-align: justify;
+    -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+/* A footer formázása */
+footer {
+    background-color: red;
+    color: white;
+}
+
+.icons {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    float: right;
+    vertical-align: middle;
+}
+
+.icons:hover {
+    border: 1px solid red;
+}
+
+#terkoz {
+    display: inline-block;
+    padding-top: 70px;
+    margin-bottom: 0;
+}
+
+#youtube, #face {
+    color: black;
+}
+
+
+/* Különböző felbontások */
+@media screen and (max-width: 1410px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    #jobb {
+        float: left;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1410px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+
+/* Animáció */
+@-webkit-keyframes slide-in-bottom {
+    0% {
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
