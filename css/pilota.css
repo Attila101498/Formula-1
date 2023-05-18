@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
-/*Betűstílus*/
+/* Betűstílus */
 * {
     font-family: 'Patua One', cursive;
 }
 
 
-/*A sectionok formázása, háttérképek beállítása*/
+/* A sectionok formázása, háttérképek beállítása */
 section {
     padding: 90px 10px;  
 }
@@ -82,7 +82,7 @@ section {
 }
 
 
-/*Címsorok formázása*/
+/* Címsorok formázása */
 h1 {
     text-align: center;
 }
@@ -101,14 +101,14 @@ h3 {
 }
 
 
-/*Kijelölés színének, hátterének megadása*/
+/* Kijelölés színének, hátterének megadása */
 ::selection {
   color: red;
   background: black;
 }
 
 
-/*Az elválasztó vonal formázása*/
+/* Az elválasztó vonal formázása */
 body hr {
     margin-top: 0rem;
     margin-bottom: 0rem;
@@ -116,7 +116,7 @@ body hr {
 }
 
 
-/*Forgó cardok*/
+/* Forgó cardok */
 .flip-card {
     max-width: 100%;
     max-height: 100%;
@@ -211,17 +211,13 @@ body hr {
 }
 
 
-/*Képek formázása*/
-img {
-    max-width: 100%;
-    max-height: 100%;
-    width: 500px; 
-    height: 350px;
+/* Képek formázása */
+.img-fluid {
     border-radius: 20px;
 }
 
 
-/*Menü beállítás*/
+/* Menü beállítás */
 a.nav-link {
     color: white;
     font-size: 20px;
@@ -236,7 +232,7 @@ a.nav-link:hover {
 }
 
 
-/*Oldal tetejére gomb*/
+/* Oldal tetejére gomb */
 #button {
     display: inline-block;
     background-color: red;

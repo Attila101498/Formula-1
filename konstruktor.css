@@ -50,7 +50,7 @@ a.nav-link:hover {
     position: relative;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1110px) {
     #kep1, #kep2, #kep3, #kep4, #kep5, #kep6, #kep7, #kep8, #kep9, #kep10 {
         display: none;
     }
