@@ -3,99 +3,31 @@
 <html lang="hu">
     <head>
         <title>F1 Csapat quiz</title>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="img/f1_logo.png" rel="icon"/>
-        <link rel="stylesheet" type="text/css" href="css/quiz.css"/>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="img/f1_logo.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/quiz.css">
     </head>
     <body>
         <div class="container">
             <div class="jumbotron">
                 <h1>F1 Csapat quiz</h1>
-                <p class="lead">Tesztelje a tudását a Formula-1 legendás csapataiból! Nincs időlimit, az elküldés gombra kattintva megtekintheti az eredményét. Sok szerencsét!</p>
+                <p class="lead">Tesztelje a tudását a Formula-1 legendás csapataiból! Nincs időlimit, a "Küldés" gombra 
+                    kattintva megtekintheti az eredményét. Sok szerencsét!</p>
             </div>
-            <section>
-                <form name="quizForm" onsubmit="return submitAnswers()">
-                    <label>1. Melyik a Formula-1 négy legsikeresebb csapata?</label>
-                    <br/>
-                    <input class="radioJ" type="radio" name="q1" value="a"> a. Ferrari, Williams, Mercedes, Renault<br/> 
-                    <input class="radioJ" type="radio" name="q1" value="b"> b. Mercedes, Renault, Lotus, Williams<br/>
-                    <input class="radioJ" type="radio" name="q1" value="c"> c. Mercedes, Renault, Brabham, Red Bull<br/>
-                    <input class="radioJ" type="radio" name="q1" value="d"> d. Ferrari, Williams, McLaren, Lotus<br/><br/>
 
-                    <label>2. Mikor szerezte meg José Froilán a Ferrari első győzelmét?</label>
-                    <br/>
-                    <input type="radio" name="q2" value="a"> a. 1950<br/>
-                    <input type="radio" name="q2" value="b"> b. 1951<br/>
-                    <input type="radio" name="q2" value="c"> c. 1957<br/>
-                    <input type="radio" name="q2" value="d"> d. 1961<br/><br/>
-
-                    <label>3. Mikor vásárolta meg a Ferrari Michael Schumachert?</label>
-                    <br/>
-                    <input type="radio" name="q3" value="a"> a. 1996<br/>
-                    <input type="radio" name="q3" value="b"> b. 1997<br/>
-                    <input type="radio" name="q3" value="c"> c. 1998<br/>
-                    <input type="radio" name="q3" value="d"> d. 1990<br/><br/>
-
-                    <label>4. Melyik évben szerezte meg a Williams csapat az első győzelmét?</label>
-                    <br/>
-                    <input type="radio" name="q4" value="a"> a. 1979<br/>
-                    <input type="radio" name="q4" value="b"> b. 1980<br/>
-                    <input type="radio" name="q4" value="c"> c. 1981<br/>
-                    <input type="radio" name="q4" value="d"> d. 1982<br/><br/>
-
-                    <label>5. Meddig versenyzett Toyota motorokkal a Williams csapat?</label>
-                    <br/>
-                    <input type="radio" name="q5" value="a"> a. 1989-1999<br/>
-                    <input type="radio" name="q5" value="b"> b. 2000-2006<br/>
-                    <input type="radio" name="q5" value="c"> c. 2007-2009<br/>
-                    <input type="radio" name="q5" value="d"> d. 2010-2011<br/><br/>
-
-                    <label>6. Melyik évben alapította Bruce McLaren a "Bruce McLaren Motor Racing"et?</label>
-                    <br/>
-                    <input type="radio" name="q6" value="a"> a. 1960<br/>
-                    <input type="radio" name="q6" value="b"> b. 1961<br/>
-                    <input type="radio" name="q6" value="c"> c. 1962<br/>
-                    <input type="radio" name="q6" value="d"> d. 1963<br/><br/>
-
-                    <label>7. Mikor lett a West cigarettamárka a McLaren csapat főszponzora?</label>
-                    <br/>
-                    <input type="radio" name="q7" value="a"> a. 1996<br/>
-                    <input type="radio" name="q7" value="b"> b. 1997<br/>
-                    <input type="radio" name="q7" value="c"> c. 1998<br/>
-                    <input type="radio" name="q7" value="d"> d. 1999<br/><br/>
-
-                    <label>8. Melyik modellel debütált a Lotus a Formula-1-be?</label>
-                    <br/>
-                    <input type="radio" name="q8" value="a"> a. Lotus 6<br/>
-                    <input type="radio" name="q8" value="b"> b. Lotus 12<br/>
-                    <input type="radio" name="q8" value="c"> c. Lotus 16<br/>
-                    <input type="radio" name="q8" value="d"> d. Lotus 18<br/><br/>
-
-                    <label>9. Hogy hívják a Lotus legendás alapítóját?</label>
-                    <br/>
-                    <input type="radio" name="q9" value="a"> a. Colin Chapman<br/>
-                    <input type="radio" name="q9" value="b"> b. Stuart Lewis-Evans<br/>
-                    <input type="radio" name="q9" value="c"> c. Stirling Moss<br/>
-                    <input type="radio" name="q9" value="d"> d. Innes Ireland<br/><br/>
-
-                    <label>10. Igaz-e az állítás? A Lotus fejlesztéseivel többször is korszerűsítette a Formula-1-et.</label>
-                    <br/>
-                    <input type="radio" name="q10" value="a"> a. Igaz<br/>
-                    <input type="radio" name="q10" value="b"> d. Hamis<br/><br/>
-
-                    <div id="results"></div>
-                    <input type="Submit" name="Submit Answers" class="btn btn-lg btn-success" id="submit">
-                </form>
-            </section>
+            <div id="quiz"></div>
+            <h3 id="results"></h3>
+            <button id="submit" class="btn btn-md btn-primary">Küldés</button>
         </div>
-        <!--Javascript-->
-        <script type="text/javascript" src="javascript/csapatquiz.js"></script>
+
+        <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="javascript/csapatquiz.js"></script>
     </body>
 </html>

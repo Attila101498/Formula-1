@@ -6,7 +6,7 @@
 }
 
 
-/*Menü beállítás*/
+/* Menü beállítás */
 #active {
     color: orange;
     border-bottom: 3px solid orange;
@@ -27,6 +27,10 @@
     border-bottom: 3px solid DarkGreen;
 }
 
+#fooldal {
+    border-bottom: 3px solid transparent;
+}
+
 #fooldal:hover {
     color: white;
     border-bottom: 3px solid white;
@@ -42,12 +46,13 @@
 }
 
 
-/*Címsorok formázása*/
+/* Címsorok formázása */
 h1 {
     color: black;
     background-color: orange;
     font-weight: bold;
     border-bottom: 5px solid DodgerBlue;
+    animation: focus-in-expand-fwd 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     -webkit-animation: focus-in-expand-fwd 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
@@ -56,11 +61,10 @@ h2 {
 }
 
 
-/*Ghost button*/
+/* Ghost button */
 .btn:link, .btn:visited {
     display: inline-block;
     padding: 10px 30px;
-    font-weight: 300%;
     text-decoration: none;
     border-radius: 200px;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
@@ -85,28 +89,21 @@ h2 {
 }
 
 
-/*Hiperhivatkozások formázása*/
+/* Hiperhivatkozások formázása */
 a:link {
-    color: steelblue; /*Unvisited link*/
+    color: steelblue; /* Unvisited link */
 }
 
 a:visited {
-    color: firebrick; /*Visited link*/
+    color: firebrick; /* Visited link */
 }
 
 
-/*A képek és szövegük formázása*/
+/* A képek és szövegük formázása */
 div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
-}
-
-div.gallery img {
-    max-width: 100%;
-    max-height: 100%;
-    width: 500px;
-    height: 350px; 
 }
 
 div.desc {
@@ -116,7 +113,7 @@ div.desc {
 }
 
 
-/*Háttér beállítása*/
+/* Háttér beállítása */
 body {
     background-image: url("img/csapat_hatter.jpg");
     background-repeat: no-repeat;
@@ -134,14 +131,31 @@ body {
 }
 
 
-/*Kijelölés színének, hátterének megadása*/
+/* Kijelölés színének, hátterének megadása */
 ::selection {
     color: red;
     background: black;
 }
 
 
-/*Animáció*/
+/* Animáció */
+@keyframes focus-in-expand-fwd {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-transform: translateZ(-800px);
+        transform: translateZ(-800px);
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
 @-webkit-keyframes focus-in-expand-fwd {
     0% {
         letter-spacing: -0.5em;

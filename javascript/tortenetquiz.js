@@ -10,7 +10,7 @@ var myQuestions = [
         correctAnswer: 'a'
     },
     {
-        question: "2. Mikor alapult meg az FIA (Nemzetközi Automobil Szövetség)",
+        question: "2. Mikor alapult meg az FIA (Nemzetközi Automobil Szövetség)?",
         answers: {
             a: '1906',
             b: '1936',

@@ -6,24 +6,24 @@
 }
 
 
-/*Hiperhivatkozások formázása*/
+/* Hiperhivatkozások formázása */
 a:link {
-    color: steelblue; /*Unvisited link*/
+    color: steelblue; /* Unvisited link */
 }
 
 a:visited {
-    color: firebrick; /*Visited link*/
+    color: firebrick; /* Visited link */
 }
 
 
-/*Kijelölés színének, hátterének megadása*/
+/* Kijelölés színének, hátterének megadása */
 ::selection {
     color: red;
     background: black;
 }
 
 
-/*Menübeállítás*/
+/* Menübeállítás */
 #nav {
     background: rgba(0, 0, 0, 1);
 }
@@ -38,14 +38,18 @@ a.nav-link:hover {
 }
 
 
-/*Cella beállítás*/
+/* Cella beállítás */
 .minwidth {
     width: 150px;
     height: 85px;
 }
 
+.minwidth p {
+    color: green;
+}
 
-/*Képbeállítások*/
+
+/* Képbeállítások */
 #kep1, #kep2, #kep3, #kep4, #kep5, #kep6, #kep7, #kep8, #kep9, #kep10 {
     position: relative;
 }
@@ -57,26 +61,30 @@ a.nav-link:hover {
 }
 
 
-/*Címsorok*/
+/* Címsorok */
 h1 {
     color: black;
-    border-bottom: 5px solid red;
+    border-bottom: 5px solid #dc3545;
     font-size: 30px;
 }
 
 h3 {
-    color: #B22222;
+    color: #eb384a;;
     font-size: 25px;
 }
 
 
-/*Táblázatok beállítása*/
-tr:nth-child(2n+1) {
+/* Táblázatok beállítása */
+tr:nth-child(even) {
+    background-color: white;  
+}
+
+tr:nth-child(odd) {
     background-color: CornflowerBlue;   
 }
 
-tr:nth-child(2n) {
-    background-color: white;  
+table tr th {
+    padding: 3px 10px;
 }
 
 td, th {
@@ -95,13 +103,13 @@ td, th {
 }
 
 
-/*Háttér beállítás*/
+/* Háttér beállítás */
 #feher, #feher2 {
     background-color: white;
 }
 
 .hatter {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("konhatter.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/konhatter.jpg");
     background-size: cover;
     color: black;
     background-attachment: fixed;
@@ -112,7 +120,7 @@ td, th {
 }
 
 
-/*Oldal tetejére gomb*/
+/* Oldal tetejére gomb */
 #button {
     display: inline-block;
     background-color: red;
@@ -155,23 +163,4 @@ td, th {
 #button.show {
     opacity: 1;
     visibility: visible;
-}
-
-
-/*Animáció*/
-.scale-in-hor-center {
-    -webkit-animation: scale-in-hor-center 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;	        
-}
-
-@-webkit-keyframes scale-in-hor-center {
-  0% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    opacity: 1;
-  }
 }

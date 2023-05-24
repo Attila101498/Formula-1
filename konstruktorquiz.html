@@ -3,99 +3,31 @@
 <html lang="hu">
     <head>
         <title>F1 Konstruktőr quiz</title>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="img/f1_logo.png" rel="icon">
-        <link rel="stylesheet" type="text/css" href="css/quiz.css"/>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="img/f1_logo.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/quiz.css">
     </head>
     <body>
         <div class="container">
             <div class="jumbotron">
                 <h1>F1 Konstruktőr quiz</h1>
-                <p class="lead">Tesztelje a tudását a Formula-1 konstruktőreiből! Nincs időlimit, az elküldés gombra kattintva megtekintheti az eredményét. Sok szerencsét!</p>
+                <p class="lead">Tesztelje a tudását a Formula-1 konstruktőreiből! Nincs időlimit, a "Küldés" gombra 
+                    kattintva megtekintheti az eredményét. Sok szerencsét!</p>
             </div>
-            <section>
-                <form name="quizForm" onsubmit="return submitAnswers()">
-                    <label>1. Mióta van külön bajnokság a konstruktőrök részére a Formula-1-ben?</label>
-                    <br/> 
-                    <input class="radioJ" type="radio" name="q1" value="a"> a. 1956<br/> 
-                    <input class="radioJ" type="radio" name="q1" value="b"> b. 1957<br/>
-                    <input class="radioJ" type="radio" name="q1" value="c"> c. 1958<br/>
-                    <input class="radioJ" type="radio" name="q1" value="d"> d. 1969<br/><br/>
 
-                    <label>2. Melyik csapat nyerte meg az első konstruktőri világbajnokságot?</label>
-                    <br/>
-                    <input type="radio" name="q2" value="a"> a. Vanwall<br/>
-                    <input type="radio" name="q2" value="b"> b. Cooper<br/>
-                    <input type="radio" name="q2" value="c"> c. Ferrari<br/>
-                    <input type="radio" name="q2" value="d"> d. BRM<br/><br/>
-
-                    <label>3. Melyik évben alkalmazták először a ma is használatban lévő pontrendszert?</label>
-                    <br/>
-                    <input type="radio" name="q3" value="a"> a. 1977<br/>
-                    <input type="radio" name="q3" value="b"> b. 1978<br/>
-                    <input type="radio" name="q3" value="c"> c. 1979<br/>
-                    <input type="radio" name="q3" value="d"> d. 1980<br/><br/>
-
-                    <label>4. Melyik a sportág legsikeresebb csapata, amelyik 16 konstruktőri címmel rendelkezik?</label>
-                    <br/>
-                    <input type="radio" name="q4" value="a"> a. Mercedes<br/>
-                    <input type="radio" name="q4" value="b"> b. Lotus<br/>
-                    <input type="radio" name="q4" value="c"> c. McLaren<br/>
-                    <input type="radio" name="q4" value="d"> d. Ferrari<br/><br/>
-
-                    <label>5. Hány év kihagyás után tért vissza a gyári Mercedes a Formula-1-be?</label>
-                    <br/>
-                    <input type="radio" name="q5" value="a"> a. 50<br/>
-                    <input type="radio" name="q5" value="b"> b. 55<br/>
-                    <input type="radio" name="q5" value="c"> c. 60<br/>
-                    <input type="radio" name="q5" value="d"> d. 65<br/><br/>
-
-                    <label>6. Melyik csapat fordít a legtöbbet az utánpótlás-nevelésre?</label>
-                    <br/>
-                    <input type="radio" name="q6" value="a"> a. McLaren<br/>
-                    <input type="radio" name="q6" value="b"> b. Haas<br/>
-                    <input type="radio" name="q6" value="c"> c. Renault<br/>
-                    <input type="radio" name="q6" value="d"> d. Red Bull<br/><br/>
-
-                    <label>7. Melyik csapat a negyedik legrégebbi résztvevője a Formula-1-nek?</label>
-                    <br/>
-                    <input type="radio" name="q7" value="a"> a. Haas<br/>
-                    <input type="radio" name="q7" value="b"> b. Ferrari<br/>
-                    <input type="radio" name="q7" value="c"> c. Sauber<br/>
-                    <input type="radio" name="q7" value="d"> d. Mercedes<br/><br/>
-
-                    <label>8. Melyik csapat nyerte az 1959-es idényt?</label>
-                    <br/>
-                    <input type="radio" name="q8" value="a"> a. Cooper<br/>
-                    <input type="radio" name="q8" value="b"> b. Vanwall<br/>
-                    <input type="radio" name="q8" value="c"> c. Lotus<br/>
-                    <input type="radio" name="q8" value="d"> d. Brabham<br/><br/>
-
-                    <label>9. Igaz-e az állítás? 1961-ben nyert először a Ferrari bajnoki címet.</label>
-                    <br/>
-                    <input type="radio" name="q9" value="a"> a. Igaz<br/>
-                    <input type="radio" name="q9" value="b"> b. Hamis<br/><br/>
-
-                    <label>10. Hány évig tartott a Red Bull uralkodása Sebastian Vettellel?</label>
-                    <br/>
-                    <input type="radio" name="q10" value="a"> a. 3<br/>
-                    <input type="radio" name="q10" value="b"> b. 4<br/>
-                    <input type="radio" name="q10" value="c"> c. 5<br/>
-                    <input type="radio" name="q10" value="d"> d. 6<br/><br/>
-
-                    <div id="results"></div>
-                    <input type="Submit" name="Submit Answers" class="btn btn-lg btn-success" id="submit">
-                </form>
-            </section>
+            <div id="quiz"></div>
+            <h3 id="results"></h3>
+            <button id="submit" class="btn btn-md btn-primary">Küldés</button>
         </div>
-        <!--Javascript-->
-        <script type="text/javascript" src="javascript/konstruktorquiz.js"></script>
+
+        <!-- Script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="javascript/konstruktorquiz.js"></script>
     </body>
 </html>

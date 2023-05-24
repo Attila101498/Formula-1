@@ -670,6 +670,17 @@
             "Győzelem": 11,
             "Pont": 655,
             "Előny": 84
+        },
+        {
+            "Idény": 2019,
+            "Konstruktőr": "Mercedes",
+            "Motor": "Mercedes",
+            "Versenyzők": "Lewis Hamilton",
+            "Csapatvezető": "Toto Wolff",
+            "Polepozíció": 10,
+            "Győzelem": 15,
+            "Pont": 739,
+            "Előny": 235
         }
     ]
 }
