@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/*Háttér beállítás*/
+/* Háttér beállítás */
 body {
     background-image: url("img/palyak_hatter.jpg");
     background-repeat: no-repeat;
@@ -12,25 +12,26 @@ body {
 }
 
 
-/*Betűstílus*/
+/* Betűstílus */
 * {
     font-family: 'PT Mono', monospace;
 }
 
 
-/*Címsorok formázása*/
+/* Címsorok formázása */
 h1 {
     font-weight: bold;
     color: red;
     font-size: 30px;
+    padding-top: 15px;
     border-bottom: 5px solid black;
 }
 
 
-/*Felsorolás*/
+/* Felsorolás */
 ul {
     list-style-type: none;
-    padding: 0px;
+    padding: 0;
 }
 
 li {
@@ -40,14 +41,14 @@ li {
 }
 
 
-/*Kijelölés színének, hátterének megadása*/
+/* Kijelölés színének, hátterének megadása */
 ::selection {
     color: red;
     background: black;
 }
 
 
-/*Képek beállítása*/
+/* Képek beállítása */
 img {
     max-width: 100%;
     max-height: 100%;
@@ -59,12 +60,12 @@ img {
 .zaszlo {
     width: 40px;
     height: 20px;
-    border-radius: 0px;
+    border-radius: 0;
     border: 1px solid black;
 }
 
 
-/*Forgó cardok*/
+/* Forgó cardok */
 .flip-card {
     max-width: 100%;
     max-height: 100%;
@@ -100,7 +101,7 @@ img {
 }
 
 
-/*Menü beállítás*/
+/* Menü beállítás */
 a.nav-link {
     color: white;
 }
@@ -111,8 +112,8 @@ a.nav-link:hover {
 
 li.nav-item {
     font-size: 20px;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 #nav {
@@ -120,7 +121,7 @@ li.nav-item {
 }
 
 
-/*Oldal tetejére gomb*/
+/* Oldal tetejére gomb */
 #button {
     display: inline-block;
     background-color: red;

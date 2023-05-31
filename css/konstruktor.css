@@ -80,18 +80,23 @@ tr:nth-child(even) {
 }
 
 tr:nth-child(odd) {
-    background-color: CornflowerBlue;   
+    background-color: indianred;   
 }
 
 table tr th {
     padding: 3px 10px;
+    background: darkorange;
 }
 
-td, th {
+table tr td {
+    padding: 2px;
+}
+
+table tr td, table tr th {
     border: 1px solid black;
 }
 
-#pontVerseny tr{
+#pontVerseny tr {
     background-color: white;
     font-size: 20px;
 }

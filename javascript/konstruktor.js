@@ -1,4 +1,5 @@
 var hely = 5;
+var finish = document.getElementById("finish");
 
 // Gombnyomásra elinduló autók
 function osszesIndul() {
@@ -91,6 +92,8 @@ function osszesIndul() {
         k10.style.left = hely + "px";
         setTimeout("osszesIndul()", 40);
     }
+
+    finish.style.display = "none";
 }
 
 
@@ -98,7 +101,7 @@ function osszesIndul() {
 $(document).ready(function () {
     let btn = $('#button');
 
-    $(window).scroll(function () {
+    $(window).scroll(function() {
         if ($(window).scrollTop() > 300) {
             btn.addClass('show');
         } else {
@@ -106,7 +109,7 @@ $(document).ready(function () {
         }
     });
 
-    btn.on('click', function (e) {
+    btn.on('click', function(e) {
         e.preventDefault();
         $('html, body').animate({scrollTop: 0}, '300');
     });
@@ -115,25 +118,26 @@ $(document).ready(function () {
 
 // Json fájl lekérése 
 var gomb = document.getElementById("btn");
+var gombCont = document.getElementById("btnContainer");
 
 gomb.addEventListener('click', function() {
-    let beker = new XMLHttpRequest();
+    let xhttp = new XMLHttpRequest();
 
-    beker.onreadystatechange = function() {
+    xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            let response = JSON.parse(beker.responseText);
+            let response = JSON.parse(xhttp.responseText);
             let Bajnokok = response.Bajnokok;
 
             let output = "<table border='1' align='center'>";
-            output += '<th style="background-color: DarkCyan;">' + "Idény" + '</th>';
-            output += '<th style="background-color: DarkCyan;">' + "Konstruktőr" + '</th>';
-            output += '<th style="background-color: DarkCyan;">' + "Motor" + '</th>';
-            output += '<th style="background-color: DarkCyan;">' + "Versenyző" + '</th>';
-            output += '<th style="background-color: DarkCyan;">' + "Csapatvezető" + '</th>';
-            output += '<th style="background-color: DarkCyan;">' + "Pole pozíció" + '</th>';
-            output += '<th style="background-color: DarkCyan;">' + "Győzelem" + '</th>';
-            output += '<th style="background-color: DarkCyan;">' + "Pont" + '</th>';
-            output += '<th style="background-color: DarkCyan;">' + "Előny" + '</th>';
+            output += '<th>' + "Idény" + '</th>';
+            output += '<th>' + "Konstruktőr" + '</th>';
+            output += '<th>' + "Motor" + '</th>';
+            output += '<th>' + "Versenyző" + '</th>';
+            output += '<th>' + "Csapatvezető" + '</th>';
+            output += '<th>' + "Pole pozíció" + '</th>';
+            output += '<th>' + "Győzelem" + '</th>';
+            output += '<th>' + "Pont" + '</th>';
+            output += '<th>' + "Előny" + '</th>';
             for (let i = 0; i < Bajnokok.length; i++) {               
                 output += '<tr><td>' + Bajnokok[i].Idény + '</td>';
                 output += '<td>' + Bajnokok[i].Konstruktőr + '</td>';
@@ -145,20 +149,22 @@ gomb.addEventListener('click', function() {
                 output += '<td>' + Bajnokok[i].Pont + '</td>';
                 output += '<td>' + Bajnokok[i].Előny + '</td></tr>';
             }
-            output += '<th style="background-color: DarkCyan;">' + "Idény" + '</th>';
-            output += '<th style="background-color: DarkCyan;">' + "Konstruktőr" + '</th>';
-            output += '<th style="background-color: DarkCyan;">' + "Motor" + '</th>';
-            output += '<th style="background-color: DarkCyan;">' + "Versenyző" + '</th>';
-            output += '<th style="background-color: DarkCyan;">' + "Csapatvezető" + '</th>';
-            output += '<th style="background-color: DarkCyan;">' + "Pole pozíció" + '</th>';
-            output += '<th style="background-color: DarkCyan;">' + "Győzelem" + '</th>';
-            output += '<th style="background-color: DarkCyan;">' + "Pont" + '</th>';
-            output += '<th style="background-color: DarkCyan;">' + "Előny" + '</th>';
+            output += '<th>' + "Idény" + '</th>';
+            output += '<th>' + "Konstruktőr" + '</th>';
+            output += '<th>' + "Motor" + '</th>';
+            output += '<th>' + "Versenyző" + '</th>';
+            output += '<th>' + "Csapatvezető" + '</th>';
+            output += '<th>' + "Pole pozíció" + '</th>';
+            output += '<th>' + "Győzelem" + '</th>';
+            output += '<th>' + "Pont" + '</th>';
+            output += '<th>' + "Előny" + '</th>';
             output += "</table>";
 
             document.getElementById('kiir').innerHTML = output;
         }
     };
-    beker.open("GET", "https://attila101498.github.io/Formula-1/konstruktorbajnok.json", true);
-    beker.send();
+    xhttp.open("GET", "https://attila101498.github.io/Formula-1/konstruktorbajnok.json", true);
+    xhttp.send();
+
+    btnContainer.style.display = "none";
 });

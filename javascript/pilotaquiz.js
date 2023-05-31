@@ -111,7 +111,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton) 
         let output = [];
         let answers;
 
-        for(let i = 0; i < questions.length; i++) {
+        for (let i = 0; i < questions.length; i++) {
 
             answers = [];
 
@@ -140,7 +140,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton) 
         let userAnswer = '';
         let numCorrect = 0;
 
-        for(let i = 0; i < questions.length; i++) {
+        for (let i = 0; i < questions.length; i++) {
             userAnswer = (answerContainers[i].querySelector('input[name=question' + i + ']:checked') || {}).value;
 
             if (userAnswer === questions[i].correctAnswer) {

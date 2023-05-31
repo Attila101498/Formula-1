@@ -5,42 +5,55 @@
 }
 
 
-/*A képek és szövegük formázása*/
-div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
+/* Cols */
+.col-sm-12, .col-md-4 {
+    padding: 2px 4px 4px 4px;
+}
+
+
+/* Cards */
+.card {
+    position: relative;
+    bottom: 0;
+    transition: .3s;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: 2px 2px 5px #b9b9b9;
+    color: black;
+    border-radius: 0;
     animation: rotate-in-2-fwd 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     -webkit-animation: rotate-in-2-fwd 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-div.gallery:hover {
-    border: 1px solid #666666;
-    opacity: 0.5;
+.card:hover {
+    box-shadow: none;
+    bottom: 3px;
 }
 
-div.gallery img {
-    width: 350px;
-    height: 200px; 
+.card img {
+    border-radius: 0;
 }
 
-div.desc {
-    padding: 15px;
+p.card-title {
+    color: #000;
+    padding-top: 15px;
     text-align: center;
-    background-color: white;
-    font-size: 15px;
-    vertical-align: middle;
+    font-size: 16px;
+}
+
+.card-body {
+    padding: 0;
 }
 
 
-/*Kijelölés színének, hátterének megadása*/
+/* Kijelölés színének, hátterének megadása */
 ::selection {
     color: red;
     background: black;
 }
 
 
-/*Menü beállítás*/
+/* Menü beállítás */
 a.nav-link {
     color: white;
     font-size: 20px;
@@ -54,12 +67,8 @@ a.nav-link:hover {
     background-color: black;
 }
 
-#feher {
-    background-color: whitesmoke;
-}
 
-
-/*Oldal tetejére gomb*/
+/* Oldal tetejére gomb */
 #button {
     display: inline-block;
     background-color: red;
@@ -104,7 +113,7 @@ a.nav-link:hover {
 }
 
 
-/*Animáció*/
+/* Animáció */
 @keyframes rotate-in-2-fwd {
     0% {
       -webkit-transform: translateZ(-200px) rotate(-45deg);

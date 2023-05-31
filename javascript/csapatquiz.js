@@ -10,7 +10,7 @@ var myQuestions = [
         correctAnswer: 'd'
     },
     {
-        question: "2. Mikor szerezte meg José Froilán a Ferrari első győzelmét?",
+        question: "2. Mikor szerezte meg José Froilán González a Ferrari első győzelmét?",
         answers: {
             a: '1950',
             b: '1951',

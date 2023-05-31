@@ -3,7 +3,7 @@ var myQuestions = [
         question: "1. Ki nyerte az első, 1906-ban megrendezett nagydíjat?",
         answers: {
             a: 'Szisz Ferenc',
-            b: 'Giuseppe Farina',
+            b: 'Nino Farina',
             c: 'Juan Manuel Fangio',
             d: 'Stirling Moss'
         },
@@ -25,7 +25,7 @@ var myQuestions = [
             a: 'Jack Brabham',
             b: 'Mike Hawthorn',
             c: 'Alberto Ascari',
-            d: 'Giuseppe Farina'
+            d: 'Nino Farina'
         },
         correctAnswer: 'd'
     },
@@ -111,7 +111,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton) 
         let output = [];
         let answers;
 
-        for(let i = 0; i < questions.length; i++) {
+        for (let i = 0; i < questions.length; i++) {
 
             answers = [];
 
@@ -140,7 +140,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton) 
         let userAnswer = '';
         let numCorrect = 0;
 
-        for(let i = 0; i < questions.length; i++) {
+        for (let i = 0; i < questions.length; i++) {
             userAnswer = (answerContainers[i].querySelector('input[name=question' + i + ']:checked') || {}).value;
 
             if (userAnswer === questions[i].correctAnswer) {

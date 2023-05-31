@@ -1,99 +1,33 @@
 <!DOCTYPE html>
 
 <html lang="hu">
-    <head>
-        <title>F1 Pálya quiz</title>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<head>
+    <title>F1 Pálya Quiz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="shortcut icon" type="image/x-icon" href="img/f1_logo.png">
-        <link rel="stylesheet" type="text/css" href="css/quiz.css"/>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <link rel="shortcut icon" type="image/x-icon" href="img/f1_logo.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/quiz.css">
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>F1 Pálya Quiz</h1>
+            <p class="lead">Tesztelje a tudását a Formula-1 pályáiról! Nincs időlimit, a "Küldés" gombra 
+                kattintva megtekintheti az eredményét. Sok szerencsét!</p>
+        </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-        <div class="container">
-            <div class="jumbotron">
-                <h1>F1 Pálya quiz</h1>
-                <p class="lead">Tesztelje a tudását a Formula-1 pályáiról! Nincs időlimit, az elküldés gombra kattintva megtekintheti az eredményét. Sok szerencsét!</p>
-            </div>
-            <section>
-                <form name="quizForm" onsubmit="return submitAnswers()">
-                    <label>1. Melyik városban rendezik az Ausztrál nagydíjat?</label>
-                    <br/>
-                    <input class="radioJ" type="radio" name="q1" value="a"> a. Sydney<br/> 
-                    <input class="radioJ" type="radio" name="q1" value="b"> b. Melbourne<br/>
-                    <input class="radioJ" type="radio" name="q1" value="c"> c. Geelong<br/>
-                    <input class="radioJ" type="radio" name="q1" value="d"> d. Hobart<br/><br/>
+        <div id="quiz"></div>
+        <h3 id="results"></h3>
+        <button id="submit" class="btn btn-md btn-primary">Küldés</button>
+    </div> 
 
-                    <label>2. Hány kanyar található a bahraini pályán?</label>
-                    <br/>
-                    <input type="radio" name="q2" value="a"> a. 13<br/>
-                    <input type="radio" name="q2" value="b"> b. 14<br/>
-                    <input type="radio" name="q2" value="c"> c. 15<br/>
-                    <input type="radio" name="q2" value="d"> d. 16<br/><br/>
-
-                    <label>3. Hány km. hosszú a kínai nagydíj pályája?</label>
-                    <br/>
-                    <input type="radio" name="q3" value="a"> a. 4,3 km.<br/>
-                    <input type="radio" name="q3" value="b"> b. 5,4 km.<br/>
-                    <input type="radio" name="q3" value="c"> c. 5,7 km.<br/>
-                    <input type="radio" name="q3" value="d"> d. 6,5 km.<br/><br/>
-
-                    <label>4. Igaz-e az állítás? A bakui pályát 2017-ben építették.</label>
-                    <br/>
-                    <input type="radio" name="q4" value="a"> a. Igaz<br/>
-                    <input type="radio" name="q4" value="b"> b. Hamis<br/><br/>
-
-                    <label>5. Ki tartja a pályacsúcsot a Spanyol pályán?</label>
-                    <br/>
-                    <input type="radio" name="q5" value="a"> a. Mark Webber<br/>
-                    <input type="radio" name="q5" value="b"> b. Lewis Hamilton<br/>
-                    <input type="radio" name="q5" value="c"> c. Sebastian Vettel<br/>
-                    <input type="radio" name="q5" value="d"> d. Fernando Alonso<br/><br/>
-
-                    <label>6. Ki szerezte a legtöbb győzelmet a monacoi nagydíhon?</label>
-                    <br/>
-                    <input type="radio" name="q6" value="a"> a. Kimi Räikkönen<br/>
-                    <input type="radio" name="q6" value="b"> b. Lewis Hamilton<br/>
-                    <input type="radio" name="q6" value="c"> c. Ayrton Senna<br/>
-                    <input type="radio" name="q6" value="d"> d. Michael Schumacher<br/><br/>
-
-                    <label>7. Hány győzelemmel tartja Michael Schumacher a Francia pályán(Circuit Paul Ricard) a győzelmi rekordot?</label>
-                    <br/>
-                    <input type="radio" name="q7" value="a"> a. 7<br/>
-                    <input type="radio" name="q7" value="b"> b. 8<br/>
-                    <input type="radio" name="q7" value="c"> c. 9<br/>
-                    <input type="radio" name="q7" value="d"> d. 10<br/><br/>
-
-                    <label>8. Mikor épült a Hungaroring?</label>
-                    <br/>
-                    <input type="radio" name="q8" value="a"> a. 1983<br/>
-                    <input type="radio" name="q8" value="b"> b. 1984<br/>
-                    <input type="radio" name="q8" value="c"> c. 1985<br/>
-                    <input type="radio" name="q8" value="d"> d. 1986<br/><br/>
-
-                    <label>9. Igaz-e az állítás? A mexikói pályacsúcsot Daniel Ricciardo tartja.</label>
-                    <br/>
-                    <input type="radio" name="q9" value="a"> a. Igaz<br/>
-                    <input type="radio" name="q9" value="b"> b. Hamis<br/><br/>
-
-                    <label>10. Ki tudott legtöbbször nyerni a brazíliai nagydíjon?</label>
-                    <br/>
-                    <input type="radio" name="q10" value="a"> a. Alain Prost<br/>
-                    <input type="radio" name="q10" value="b"> b. Rubens Barrichello<br/>
-                    <input type="radio" name="q10" value="c"> c. Kimi Räikkönen<br/>
-                    <input type="radio" name="q10" value="d"> d. Sebastian Vettel<br/><br/>
-
-                    <div id="results"></div>
-                    <input type="Submit" name="Submit Answers" class="btn btn-lg btn-success" id="submit">
-                </form>
-            </section>
-        </div> 
-        <!--Javascript-->
-        <script type="text/javascript" src="javascript/palyakquiz.js"></script>
-    </body>
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="javascript/palyakquiz.js"></script>
+</body>
 </html>

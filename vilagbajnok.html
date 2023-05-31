@@ -1,306 +1,493 @@
 <!DOCTYPE html>
 
 <html lang="hu">
-    <head>
-        <title>Világbajnokok</title>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<head>
+    <title>Világbajnokok</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="shortcut icon" type="image/x-icon" href="img/f1_logo.png">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
-        <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet"/>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-        <link rel="stylesheet" type="text/css" href="css/vilagbajnok.css"/>
-    </head>
-    <body>
-        <!--Oldal tetejére gomb-->
-        <a id="button" title="Oldal tetejére"></a>
+    <link rel="shortcut icon" type="image/x-icon" href="img/f1_logo.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/vilagbajnok.css">
+</head>
+<body>
+    <!-- Oldal tetejére gomb -->
+    <a id="button" title="Oldal tetejére"></a>
 
-        <!--Navbar-->
-        <nav class="navbar navbar-expand-sm" id="nav">
-            <div class="container">
-                <a class="navbar-brand"><img src="img/navlogo.png" alt="logo" style="width: 200px; height: 50px;"/></a>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Főoldal</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="vilagbajnokquiz.html" target="_blank">Quiz</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm" id="nav">
+        <div class="container">
+            <a class="navbar-brand"><img src="img/navlogo.png" alt="logo" style="width: 200px; height: 50px;"></a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Főoldal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="vilagbajnokquiz.html" target="_blank">Quiz</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-        <div class="container" id="feher">
-            <!--Nino Farina-->
-            <div class="gallery">
-                <a href="https://hu.wikipedia.org/wiki/Giuseppe_Farina" target="_blank">
-                    <img src="img/Nino Farina.jpg" alt="Farina"/>
+    <div class="container">
+        <div class="row">
+            <!-- Nino Farina -->
+            <div class="col-sm-12 col-md-4">
+                <a href="https://hu.wikipedia.org/wiki/Giuseppe_Farina" target="_blank" 
+                    style="text-decoration: none; float: left;">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/Nino_Farina.jpg" alt="Farina" class="img-fluid">
+                            <p class="card-title">Nino Farina - 1950</p>
+                        </div>
+                    </div>
                 </a>
-                <div class="desc">Nino Farina - 1950</div>
-            </div>
-
-            <!--Juan Manuel Fangio-->
-            <div class="gallery">
-                <a href="https://hu.wikipedia.org/wiki/Juan_Manuel_Fangio" target="_blank">
-                    <img src="img/Juan Manuel.jpg" alt="Manuel"/>
-                </a>
-                <div class="desc">Juan Manuel Fangio - 1951,1954-1957</div>
             </div>
 
-            <!--Alberto Acari-->
-            <div class="gallery">
-                <a href="https://hu.wikipedia.org/wiki/Alberto_Ascari" target="_blank">
-                    <img src="img/Alberto Acari.jpg" alt="Alberto Acari"/>
+            <!-- Juan Manuel Fangio -->
+            <div class="col-sm-12 col-md-4">
+                <a href="https://hu.wikipedia.org/wiki/Juan_Manuel_Fangio" target="_blank" 
+                    style="text-decoration: none; float: left;">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/Juan_Manuel.jpg" alt="Manuel" class="img-fluid">
+                            <p class="card-title">Juan Manuel Fangio - 1951,1954-1957</p>
+                        </div>
+                    </div>
                 </a>
-                <div class="desc">Alberto Acari - 1952,1953</div>
             </div>
 
-            <!--Mike Hawthorn-->
-            <div class="gallery">
-                <a href="https://hu.wikipedia.org/wiki/Mike_Hawthorn" target="_blank">
-                    <img src="img/Mike Hawthorn.jpg" alt="Mike Hawthorn"/>
+            <!-- Alberto Acari -->
+            <div class="col-sm-12 col-md-4">
+                <a href="https://hu.wikipedia.org/wiki/Alberto_Ascari" target="_blank" 
+                    style="text-decoration: none; float: left;">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/Alberto_Acari.jpg" alt="Alberto Acari" class="img-fluid">
+                            <p class="card-title">Alberto Acari - 1952,1953</p>
+                        </div>
+                    </div>
                 </a>
-                <div class="desc">Mike Hawthorn - 1958</div>
-            </div>
-
-            <!--Jack Brabham-->
-            <div class="gallery">
-                <a href="https://hu.wikipedia.org/wiki/Jack_Brabham" target="_blank">
-                    <img src="img/Jack Brabham.jpg" alt="Jack Brabham"/>
-                </a>
-                <div class="desc">Jack Brabham - 1959,1960,1966</div>
-            </div>
-
-            <!--Phil Hill-->
-            <div class="gallery">
-                <a href="https://hu.wikipedia.org/wiki/Phil_Hill" target="_blank">
-                    <img src="img/Phil Hill.jpg" alt="Phil Hill"/>
-                </a>
-                <div class="desc">Phil Hill - 1961</div>
-            </div>
-
-            <!--Graham Hill-->
-            <div class="gallery">
-                <a href="https://hu.wikipedia.org/wiki/Graham_Hill" target="_blank">
-                    <img src="img/Graham Hill.jpg" alt="Graham Hill"/>
-                </a>
-                <div class="desc">Graham Hill - 1962,1968</div>
-            </div>
-
-            <!--Jim Clark-->
-            <div class="gallery">
-                <a href="https://hu.wikipedia.org/wiki/Jim_Clark" target="_blank">
-                    <img src="img/Jim Clark.jpg" alt="Jim Clark"/>
-                </a>
-                <div class="desc">Jim Clark - 1963,1965</div>
-            </div>
-
-            <!--John Surtees-->
-            <div class="gallery">
-                <a href="https://hu.wikipedia.org/wiki/John_Surtees" target="_blank">
-                    <img src="img/John Surtees.jpg" alt="John Surtees"/>
-                </a>
-                <div class="desc">John Surtees - 1964</div>
-            </div>
-
-            <!--Denny Hulme-->
-            <div class="gallery">
-                <a href="https://hu.wikipedia.org/wiki/Denny_Hulme" target="_blank">
-                    <img src="img/Denny Hulme.jpg" alt="Denny Hulme"/>
-                </a>
-                <div class="desc">Denny Hulme - 1967</div>
-            </div>
-
-            <!--Jackie Stewart-->
-            <div class="gallery">
-                <a href="https://hu.wikipedia.org/wiki/Jackie_Stewart" target="_blank">
-                    <img src="img/Jackie Stewart.jpg" alt="Jackie Stewart"/>
-                </a>
-                <div class="desc">Jackie Stewart - 1969,1971,1973</div>
-            </div>
-
-            <!--Jochen Rindt-->
-            <div class="gallery">
-                <a href="https://hu.wikipedia.org/wiki/Jochen_Rindt" target="_blank">
-                    <img src="img/Jochen Rindt.jpg" alt="Jochen Rindt"/>
-                </a>
-                <div class="desc">Jochen Rindt - 1970</div>
-            </div>
-
-            <!--Emerson Fittipaldi-->
-            <div class="gallery">
-                <a href="https://hu.wikipedia.org/wiki/Emerson_Fittipaldi" target="_blank">
-                    <img src="img/Emerson Fittipaldi.jpg" alt="Emerson Fittipaldi"/>
-                </a>
-                <div class="desc">Emerson Fittipaldi - 1972,1974</div>
-            </div>
-
-            <!--Niki Lauda-->
-            <div class="gallery">
-                <a href="https://hu.wikipedia.org/wiki/Niki_Lauda" target="_blank">
-                    <img src="img/Niki Lauda.webp" alt="Niki Lauda"/>
-                </a>
-                <div class="desc">Niki Lauda - 1975,1977,1984</div>
-            </div>
-
-            <!--James Hunt-->
-            <div class="gallery">
-                <a href="https://hu.wikipedia.org/wiki/James_Hunt" target="_blank">
-                    <img src="img/James Hunt.jpg" alt="James Hunt"/>
-                </a>
-                <div class="desc">James Hunt - 1976</div>
-            </div>
-
-            <!--Mario Andretti-->
-            <div class="gallery">
-                <a href="https://hu.wikipedia.org/wiki/Mario_Andretti" target="_blank">
-                    <img src="img/Mario Andretti.jpg" alt="Mario Andretti"/>
-                </a>
-                <div class="desc">Mario Andretti - 1978</div>
-            </div>
-
-            <!--Jody Scheckter-->
-            <div class="gallery">
-                <a href="https://hu.wikipedia.org/wiki/Jody_Scheckter" target="_blank">
-                    <img src="img/Jody Scheckter.gif" alt="Jody Scheckter"/>
-                </a>
-                <div class="desc">Jody Scheckter - 1979</div>
-            </div>
-
-            <!--Alan Jones-->
-            <div class="gallery">
-                <a href="https://hu.wikipedia.org/wiki/Alan_Jones" target="_blank">
-                    <img src="img/Alan Jones.jpg" alt="Alan Jones"/>
-                </a>
-                <div class="desc">Alan Jones - 1980</div>
-            </div>
-
-            <!--Nelson Piquet-->
-            <div class="gallery">
-                <a href="https://hu.wikipedia.org/wiki/Nelson_Piquet" target="_blank">
-                    <img src="img/Nelson Piquet.jpg" alt="Nelson Piquet"/>
-                </a>
-                <div class="desc">Nelson Piquet - 1981,1983,1987</div>
-            </div>
-
-            <!--Keke Rosberg-->
-            <div class="gallery">
-                <a href="https://hu.wikipedia.org/wiki/Keke_Rosberg" target="_blank">
-                    <img src="img/Keke Rosberg.jpg" alt="Keke Rosberg"/>
-                </a>
-                <div class="desc">Keke Rosberg - 1982</div>
-            </div>
-
-            <!--Alain Prost-->
-            <div class="gallery">
-                <a href="https://hu.wikipedia.org/wiki/Alain_Prost" target="_blank">
-                    <img src="img/Alain Prost.jpg" alt="Alain Prost"/>
-                </a>
-                <div class="desc">Alain Prost - 1985,1986,1989,1993</div>
-            </div>
-
-            <!--Ayrton Senna-->
-            <div class="gallery">
-                <a href="https://hu.wikipedia.org/wiki/Ayrton_Senna" target="_blank">
-                    <img src="img/Ayrton Senna.jpg" alt="Ayrton Senna"/>
-                </a>
-                <div class="desc">Ayrton Senna - 1988,1990,1991</div>
-            </div>
-
-            <!--Nigel Mansell-->
-            <div class="gallery">
-                <a href="https://hu.wikipedia.org/wiki/Nigel_Mansell" target="_blank">
-                    <img src="img/Nigel Mansell.jpg" alt="Nigel Mansell"/>
-                </a>
-                <div class="desc">Nigel Mansell - 1992</div>
-            </div>
-
-            <!--Michael Schumacher-->
-            <div class="gallery">
-                <a href="https://hu.wikipedia.org/wiki/Michael_Schumacher" target="_blank">
-                    <img src="img/Michael Schumacher.jpg" alt="Michael Schumacher"/>
-                </a>
-                <div class="desc">Michael Schumacher - 1994,1995,2000-2004</div>
-            </div>
-
-            <!--Damon Hill-->
-            <div class="gallery">
-                <a href="https://hu.wikipedia.org/wiki/Damon_Hill" target="_blank">
-                    <img src="img/Damon Hill.jpg" alt="Damon Hill"/>
-                </a>
-                <div class="desc">Damon Hill - 1996</div>
-            </div>
-
-            <!--Jacques Villeneuve-->
-            <div class="gallery">
-                <a href="https://hu.wikipedia.org/wiki/Jacques_Villeneuve" target="_blank">
-                    <img src="img/Jacques Villeneuve.jpg" alt="Jacques Villeneuve"/>
-                </a>
-                <div class="desc">Jacques Villeneuve - 1997</div>
-            </div>
-
-            <!--Mika Hakkinen-->
-            <div class="gallery">
-                <a href="https://hu.wikipedia.org/wiki/Mika_H%C3%A4kkinen" target="_blank">
-                    <img src="img/Mika Hakkinen.jpg" alt="Mika Hakkinen"/>
-                </a>
-                <div class="desc">Mika Häkkinen - 1998,1999</div>
-            </div>
-
-            <!--Fernando Alonso-->
-            <div class="gallery">
-                <a href="https://hu.wikipedia.org/wiki/Fernando_Alonso" target="_blank">
-                    <img src="img/Fernando Alonso.jpg" alt="Fernando Alonso"/>
-                </a>
-                <div class="desc">Fernando Alonso - 2005,2006</div>
-            </div>
-
-            <!--Kimi Raikkonen-->
-            <div class="gallery">
-                <a href="https://hu.wikipedia.org/wiki/Kimi_R%C3%A4ikk%C3%B6nen" target="_blank">
-                    <img src="img/Kimi Raikkonen.jpg" alt="Kimi Raikkonen"/>
-                </a>
-                <div class="desc">Kimi Raikkonen - 2007</div>
-            </div>
-
-            <!--Lewis Hamilton-->
-            <div class="gallery">
-                <a href="https://hu.wikipedia.org/wiki/Lewis_Hamilton" target="_blank">
-                    <img src="img/Lewis Hamilton.jpg" alt="Lewis Hamilton"/>
-                </a>
-                <div class="desc">Lewis Hamilton - 2008,2014,2015,2017-2019</div>
-            </div>
-
-            <!--Jenson Button-->
-            <div class="gallery">
-                <a href="https://hu.wikipedia.org/wiki/Jenson_Button" target="_blank">
-                    <img src="img/Jenson Button.jpg" alt="Jenson Button"/>
-                </a>
-                <div class="desc">Jenson Button - 2009</div>
-            </div>
-
-            <!--Sebastian Vettel-->
-            <div class="gallery">
-                <a href="https://hu.wikipedia.org/wiki/Sebastian_Vettel" target="_blank">
-                    <img src="img/Sebastian Vettel.jpg" alt="Sebastian Vettel"/>
-                </a>
-                <div class="desc">Sebastian Vettel - 2010,2011,2012,2013</div>
-            </div>
-
-            <!--Nico Rosberg-->
-            <div class="gallery">
-                <a href="https://hu.wikipedia.org/wiki/Nico_Rosberg" target="_blank">
-                    <img src="img/Nico Rosberg.jpg" alt="Nico Rosberg"/>
-                </a>
-                <div class="desc">Nico Rosberg - 2016</div>
             </div>
         </div>
 
-        <!-- Scripts -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-        <script src="javascript/gomb.js"></script>
-    </body>
+        <div class="row">
+            <!-- Mike Hawthorn -->
+            <div class="col-sm-12 col-md-4">
+                <a href="https://hu.wikipedia.org/wiki/Mike_Hawthorn" target="_blank" 
+                    style="text-decoration: none; float: left;">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/Mike_Hawthorn.jpg" alt="Mike Hawthorn" class="img-fluid">
+                            <p class="card-title">Mike Hawthorn - 1958</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Jack Brabham -->
+            <div class="col-sm-12 col-md-4">
+                <a href="https://hu.wikipedia.org/wiki/Jack_Brabham" target="_blank" 
+                    style="text-decoration: none; float: left;">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/Jack_Brabham.jpg" alt="Jack Brabham" class="img-fluid">
+                            <p class="card-title">Jack Brabham - 1959,1960,1966</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Phil Hill -->
+            <div class="col-sm-12 col-md-4">
+                <a href="https://hu.wikipedia.org/wiki/Phil_Hill" target="_blank" 
+                    style="text-decoration: none; float: left;">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/Phil_Hill.jpg" alt="Phil Hill" class="img-fluid">
+                            <p class="card-title">Phil Hill - 1961</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Graham Hill -->
+            <div class="col-sm-12 col-md-4">
+                <a href="https://hu.wikipedia.org/wiki/Graham_Hill" target="_blank" 
+                    style="text-decoration: none; float: left;">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/Graham_Hill.jpg" alt="Graham Hill" class="img-fluid">
+                            <p class="card-title">Graham Hill - 1962,1968</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Jim Clark -->
+            <div class="col-sm-12 col-md-4">
+                <a href="https://hu.wikipedia.org/wiki/Jim_Clark" target="_blank" 
+                    style="text-decoration: none; float: left;">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/Jim_Clark.jpg" alt="Jim Clark" class="img-fluid">
+                            <p class="card-title">Jim Clark - 1963,1965</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- John Surtees -->
+            <div class="col-sm-12 col-md-4">
+                <a href="https://hu.wikipedia.org/wiki/John_Surtees" target="_blank" 
+                    style="text-decoration: none; float: left;">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/John_Surtees.jpg" alt="John Surtees" class="img-fluid">
+                            <p class="card-title">John Surtees - 1964</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Denny Hulme -->
+            <div class="col-sm-12 col-md-4">
+                <a href="https://hu.wikipedia.org/wiki/Denny_Hulme" target="_blank" 
+                    style="text-decoration: none; float: left;">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/Denny_Hulme.jpg" alt="Denny Hulme" class="img-fluid">
+                            <p class="card-title">Denny Hulme - 1967</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Jackie Stewart -->
+            <div class="col-sm-12 col-md-4">
+                <a href="https://hu.wikipedia.org/wiki/Jackie_Stewart" target="_blank" 
+                    style="text-decoration: none; float: left;">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/Jackie_Stewart.jpg" alt="Jackie Stewart" class="img-fluid">
+                            <p class="card-title">Jackie Stewart - 1969,1971,1973</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Jochen Rindt -->
+            <div class="col-sm-12 col-md-4">
+                <a href="https://hu.wikipedia.org/wiki/Jochen_Rindt" target="_blank" 
+                    style="text-decoration: none; float: left;">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/Jochen_Rindt.jpg" alt="Jochen Rindt" class="img-fluid">
+                            <p class="card-title">Jochen Rindt - 1970<b>(P)</b></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Emerson Fittipaldi -->
+            <div class="col-sm-12 col-md-4">
+                <a href="https://hu.wikipedia.org/wiki/Emerson_Fittipaldi" target="_blank" 
+                    style="text-decoration: none; float: left;">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/Emerson_Fittipaldi.jpg" alt="Emerson Fittipaldi" class="img-fluid">
+                            <p class="card-title">Emerson Fittipaldi - 1972,1974</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Niki Lauda -->
+            <div class="col-sm-12 col-md-4">
+                <a href="https://hu.wikipedia.org/wiki/Niki_Lauda" target="_blank" 
+                    style="text-decoration: none; float: left;">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/Niki_Lauda.jpg" alt="Niki Lauda" class="img-fluid">
+                            <p class="card-title">Niki Lauda - 1975,1977,1984</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- James Hunt -->
+            <div class="col-sm-12 col-md-4">
+                <a href="https://hu.wikipedia.org/wiki/James_Hunt" target="_blank" 
+                    style="text-decoration: none; float: left;">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/James_Hunt.jpg" alt="James Hunt" class="img-fluid">
+                            <p class="card-title">James Hunt - 1976</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Mario Andretti -->
+            <div class="col-sm-12 col-md-4">
+                <a href="https://hu.wikipedia.org/wiki/Mario_Andretti" target="_blank" 
+                    style="text-decoration: none; float: left;">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/Mario_Andretti.jpg" alt="Mario Andretti" class="img-fluid">
+                            <p class="card-title">Mario Andretti - 1978</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Jody Scheckter -->
+            <div class="col-sm-12 col-md-4">
+                <a href="https://hu.wikipedia.org/wiki/Jody_Scheckter" target="_blank" 
+                    style="text-decoration: none; float: left;">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/Jody_Scheckter.gif" alt="Jody Scheckter" class="img-fluid">
+                            <p class="card-title">Jody Scheckter - 1979</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Alan Jones -->
+            <div class="col-sm-12 col-md-4">
+                <a href="https://hu.wikipedia.org/wiki/Alan_Jones" target="_blank" 
+                    style="text-decoration: none; float: left;">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/Alan_Jones.jpg" alt="Alan Jones" class="img-fluid">
+                            <p class="card-title">Alan Jones - 1980</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Nelson Piquet -->
+            <div class="col-sm-12 col-md-4">
+                <a href="https://hu.wikipedia.org/wiki/Nelson_Piquet" target="_blank" 
+                    style="text-decoration: none; float: left;">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/Nelson_Piquet.jpg" alt="Nelson Piquet" class="img-fluid">
+                            <p class="card-title">Nelson Piquet - 1981,1983,1987</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Keke Rosberg -->
+            <div class="col-sm-12 col-md-4">
+                <a href="https://hu.wikipedia.org/wiki/Keke_Rosberg" target="_blank" 
+                    style="text-decoration: none; float: left;">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/Keke_Rosberg.jpg" alt="Keke Rosberg" class="img-fluid">
+                            <p class="card-title">Keke Rosberg - 1982</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Alain Prost -->
+            <div class="col-sm-12 col-md-4">
+                <a href="https://hu.wikipedia.org/wiki/Alain_Prost" target="_blank" 
+                    style="text-decoration: none; float: left;">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/Alain_Prost.jpg" alt="Alain Prost" class="img-fluid">
+                            <p class="card-title">Alain Prost - 1985,1986,1989,1993</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Ayrton Senna -->
+            <div class="col-sm-12 col-md-4">
+                <a href="https://hu.wikipedia.org/wiki/Ayrton_Senna" target="_blank" 
+                    style="text-decoration: none; float: left;">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/Ayrton_Senna.jpg" alt="Ayrton Senna" class="img-fluid">
+                            <p class="card-title">Ayrton Senna - 1988,1990,1991</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Nigel Mansell -->
+            <div class="col-sm-12 col-md-4">
+                <a href="https://hu.wikipedia.org/wiki/Nigel_Mansell" target="_blank" 
+                    style="text-decoration: none; float: left;">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/Nigel_Mansell.jpg" alt="Nigel Mansell" class="img-fluid">
+                            <p class="card-title">Nigel Mansell - 1992</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Michael Schumacher -->
+            <div class="col-sm-12 col-md-4">
+                <a href="https://hu.wikipedia.org/wiki/Michael_Schumacher" target="_blank" 
+                    style="text-decoration: none; float: left;">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/Michael_Schumacher.jpg" alt="Michael Schumacher" class="img-fluid">
+                            <p class="card-title">Michael Schumacher - 1994,1995,2000-2004</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Damon Hill -->
+            <div class="col-sm-12 col-md-4">
+                <a href="https://hu.wikipedia.org/wiki/Damon_Hill" target="_blank" 
+                    style="text-decoration: none; float: left;">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/Damon_Hill.jpg" alt="Damon Hill" class="img-fluid">
+                            <p class="card-title">Damon Hill - 1996</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Jacques Villeneuve -->
+            <div class="col-sm-12 col-md-4">
+                <a href="https://hu.wikipedia.org/wiki/Jacques_Villeneuve" target="_blank" 
+                    style="text-decoration: none; float: left;">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/Jacques_Villeneuve.jpg" alt="Jacques Villeneuve" class="img-fluid">
+                            <p class="card-title">Jacques Villeneuve - 1997</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Mika Hakkinen -->
+            <div class="col-sm-12 col-md-4">
+                <a href="https://hu.wikipedia.org/wiki/Mika_H%C3%A4kkinen" target="_blank" 
+                    style="text-decoration: none; float: left;">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/Mika_Hakkinen.jpg" alt="Mika Hakkinen" class="img-fluid">
+                            <p class="card-title">Mika Häkkinen - 1998,1999</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Fernando Alonso -->
+            <div class="col-sm-12 col-md-4">
+                <a href="https://hu.wikipedia.org/wiki/Fernando_Alonso" target="_blank" 
+                    style="text-decoration: none; float: left;">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/Fernando_Alonso.jpg" alt="Fernando Alonso" class="img-fluid">
+                            <p class="card-title">Fernando Alonso - 2005,2006</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Kimi Raikkonen -->
+            <div class="col-sm-12 col-md-4">
+                <a href="https://hu.wikipedia.org/wiki/Kimi_R%C3%A4ikk%C3%B6nen" target="_blank" 
+                    style="text-decoration: none; float: left;">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/Kimi_Raikkonen.jpg" alt="Kimi Raikkonen" class="img-fluid">
+                            <p class="card-title">Kimi Raikkonen - 2007</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Lewis Hamilton -->
+            <div class="col-sm-12 col-md-4">
+                <a href="https://hu.wikipedia.org/wiki/Lewis_Hamilton" target="_blank" 
+                    style="text-decoration: none; float: left;">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/Lewis_Hamilton.jpg" alt="Lewis Hamilton" class="img-fluid">
+                            <p class="card-title">Lewis Hamilton - 2008,2014,2015,2017-2019</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Jenson Button -->
+            <div class="col-sm-12 col-md-4">
+                <a href="https://hu.wikipedia.org/wiki/Jenson_Button" target="_blank" 
+                    style="text-decoration: none; float: left;">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/Jenson_Button.jpg" alt="Jenson Button" class="img-fluid">
+                            <p class="card-title">Jenson Button - 2009</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Sebastian Vettel -->
+            <div class="col-sm-12 col-md-4">
+                <a href="https://hu.wikipedia.org/wiki/Sebastian_Vettel" target="_blank" 
+                    style="text-decoration: none; float: left;">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/Sebastian_Vettel.jpg" alt="Sebastian Vettel" class="img-fluid">
+                            <p class="card-title">Sebastian Vettel - 2010,2011,2012,2013</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Nico Rosberg -->
+            <div class="col-sm-12 col-md-4">
+                <a href="https://hu.wikipedia.org/wiki/Nico_Rosberg" target="_blank" 
+                    style="text-decoration: none; float: left;">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="img/Nico_Rosberg.jpg" alt="Nico Rosberg" class="img-fluid">
+                            <p class="card-title">Nico Rosberg - 2016</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="javascript/gomb.js"></script>
+</body>
 </html>
