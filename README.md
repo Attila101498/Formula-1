@@ -1,0 +1,1 @@
+This is my first hobby project. I've started it, when i started learning Front-end Development. As I learned more and more, I added those parts to the site. Of course, there is still room for improvement, which I plan to do in the future.
